@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB 2027/2028 — Pondok Pesantren Qur'an &amp; Dakwah Alkarim Rasyid Indonesia</title>
+    <meta name="description"
+        content="Brosur Digital Penerimaan Murid/Santri Baru 2027/2028 — pendidikan formal SMP dan pembinaan Al-Qur'an dalam satu perjalanan pendidikan. Informasi lengkap melalui admin PMB.">
+    <meta property="og:title" content="PMB 2027/2028 — Alkarim Rasyid Indonesia">
+    <meta property="og:description"
+        content="Sekolah formal dan Al-Qur'an tidak harus pilih salah satu. Kenali program, kegiatan santri, dan langkah pendaftaran dalam satu brosur digital.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#F7F1E7">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23390913'/%3E%3Cpath d='M32 14c7 5.5 11 11.5 11 18H21c0-6.5 4-12.5 11-18z' fill='%23C9A45C'/%3E%3Crect x='16' y='34' width='32' height='14' rx='3' fill='%23C9A45C'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (Play CDN). Untuk produksi WordPress, boleh diganti dengan build Tailwind sendiri. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        burgundy: { 50: '#F6E9EA', 100: '#EDD3D6', 200: '#D9AEB2', 600: '#82202C', 700: '#6E1420', 800: '#5A0F1B', 900: '#390913' },
+                        gold: { 50: '#FBF6EA', 100: '#F5ECD8', 200: '#EEDDB8', 300: '#E3C98F', 400: '#D4B670', 500: '#C9A45C', 600: '#B08D45', 700: '#8F6E33' },
+                        ivory: { 50: '#FDFBF6', 100: '#F7F1E7', 200: '#F0E7D8' },
+                        blush: { 50: '#FAF1EE', 100: '#F5E5DF', 200: '#EFD6CD' }
+                    },
+                    fontFamily: {
+                        display: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+                    },
+                    boxShadow: {
+                        soft: '0 24px 60px -28px rgba(57,9,19,.30)',
+                        card: '0 10px 40px -18px rgba(57,9,19,.18)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ============================================================
+   LANDING PAGE PMB 2027/2028 — ALKARIM RASYID INDONESIA
+   Gaya: Organic & Eco-friendly • Soft Pastel • Red Burgundy
+   Framework copywriting: QUEST (Qualify-Understand-Educate-Stimulate-Transition)
+   ============================================================ */
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+            -webkit-font-smoothing: antialiased
+        }
+
+        /* --- Scroll reveal --- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity .8s cubic-bezier(.22, .61, .36, 1), transform .8s cubic-bezier(.22, .61, .36, 1)
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        /* --- Hero staged entrance (cinematic) --- */
+        @keyframes heroIn {
+            from {
+                opacity: 0;
+                transform: translateY(18px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .hero-in {
+            opacity: 0;
+            animation: heroIn .9s cubic-bezier(.22, .61, .36, 1) forwards
+        }
+
+        /* --- Cinematic scene: slow zoom, partikel emas, glow --- */
+        @keyframes slowzoom {
+            from {
+                transform: scale(1)
+            }
+
+            to {
+                transform: scale(1.08)
+            }
+        }
+
+        .scene-zoom {
+            animation: slowzoom 28s ease-in-out infinite alternate;
+            transform-origin: 60% 25%
+        }
+
+        @keyframes drift {
+            0% {
+                transform: translate3d(0, 0, 0);
+                opacity: 0
+            }
+
+            12% {
+                opacity: .85
+            }
+
+            85% {
+                opacity: .4
+            }
+
+            100% {
+                transform: translate3d(18px, -52vh, 0);
+                opacity: 0
+            }
+        }
+
+        .particle {
+            position: absolute;
+            bottom: -10px;
+            border-radius: 9999px;
+            background: radial-gradient(circle at 35% 35%, #F1DFAE, #C9A45C 70%);
+            box-shadow: 0 0 10px 2px rgba(201, 164, 92, .35);
+            animation: drift linear infinite
+        }
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                opacity: .55;
+                transform: scale(1)
+            }
+
+            50% {
+                opacity: .9;
+                transform: scale(1.06)
+            }
+        }
+
+        .sun-glow {
+            animation: glowPulse 7s ease-in-out infinite
+        }
+
+        @keyframes floaty {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-10px)
+            }
+        }
+
+        .floaty {
+            animation: floaty 6s ease-in-out infinite
+        }
+
+        .floaty-slow {
+            animation: floaty 9s ease-in-out infinite
+        }
+
+        /* --- Light sweep pada CTA utama --- */
+        @keyframes sweep {
+            0% {
+                left: -45%
+            }
+
+            55%,
+            100% {
+                left: 135%
+            }
+        }
+
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+            isolation: isolate
+        }
+
+        .btn-shine::after {
+            content: "";
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            width: 40%;
+            left: -50%;
+            background: linear-gradient(105deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .38) 50%, rgba(255, 255, 255, 0) 100%);
+            transform: skewX(-18deg);
+            animation: sweep 4.5s ease-in-out infinite;
+            pointer-events: none
+        }
+
+        /* --- WhatsApp pulse --- */
+        @keyframes waPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, .45)
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(37, 211, 102, 0)
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0)
+            }
+        }
+
+        .wa-pulse {
+            animation: waPulse 2.6s ease-out infinite
+        }
+
+        /* --- Ornamen geometris Islami (halus) --- */
+        .pattern-star {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%235A0F1B' stroke-opacity='0.05'%3E%3Cpath d='M36 6l8 22 22 8-22 8-8 22-8-22-22-8 22-8z'/%3E%3Ccircle cx='36' cy='36' r='5'/%3E%3C/g%3E%3C/svg%3E")
+        }
+
+        .pattern-star-gold {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C9A45C' stroke-opacity='0.16'%3E%3Cpath d='M36 6l8 22 22 8-22 8-8 22-8-22-22-8 22-8z'/%3E%3Ccircle cx='36' cy='36' r='5'/%3E%3C/g%3E%3C/svg%3E")
+        }
+
+        /* --- FAQ accordion --- */
+        .faq summary {
+            list-style: none;
+            cursor: pointer
+        }
+
+        .faq summary::-webkit-details-marker {
+            display: none
+        }
+
+        .faq .chev {
+            transition: transform .35s ease
+        }
+
+        .faq[open] .chev {
+            transform: rotate(180deg)
+        }
+
+        /* --- Timeline vertikal --- */
+        .tl {
+            position: relative
+        }
+
+        .tl::before {
+            content: "";
+            position: absolute;
+            left: 19px;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: linear-gradient(180deg, #C9A45C 0%, rgba(201, 164, 92, .12) 100%)
+        }
+
+        /* --- Order notification --- */
+        @keyframes notifIn {
+            from {
+                opacity: 0;
+                transform: translateY(16px) scale(.96)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1)
+            }
+        }
+
+        .notif-in {
+            animation: notifIn .5s cubic-bezier(.22, .61, .36, 1) forwards
+        }
+
+        @keyframes notifOut {
+            from {
+                opacity: 1;
+                transform: translateY(0) scale(1)
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(10px) scale(.97)
+            }
+        }
+
+        .notif-out {
+            animation: notifOut .4s ease forwards
+        }
+
+        /* --- Exit intent modal --- */
+        #exitModal {
+            transition: opacity .35s ease
+        }
+
+        #exitModal .panel {
+            transition: transform .35s cubic-bezier(.22, .61, .36, 1), opacity .35s ease
+        }
+
+        #exitModal.hide {
+            opacity: 0;
+            pointer-events: none
+        }
+
+        #exitModal.hide .panel {
+            transform: translateY(18px) scale(.97);
+            opacity: 0
+        }
+
+        /* --- Sticky bar mobile --- */
+        #stickyBar {
+            transform: translateY(110%);
+            transition: transform .45s cubic-bezier(.22, .61, .36, 1)
+        }
+
+        #stickyBar.bar-show {
+            transform: translateY(0)
+        }
+
+        /* --- Header saat scroll --- */
+        .header-scrolled {
+            box-shadow: 0 8px 30px -18px rgba(57, 9, 19, .28)
+        }
+
+        /* --- Countdown box --- */
+        .cd-box {
+            min-width: 64px
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none
+            }
+
+            .hero-in {
+                opacity: 1
+            }
+        }
+    </style>
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1;
+                transform: none
+            }
+        </style>
+    </noscript>
+</head>
+
+<body class="font-body bg-ivory-100 text-neutral-700 antialiased pb-24 md:pb-0">
+
+    <!--
+═══════════════════════════════════════════════════════════════════
+LANDING PAGE — BROSUR DIGITAL PMB 2027/2028
+Pondok Pesantren Qur'an & Dakwah Alkarim Rasyid Indonesia
+SMP Alkarim Rasyid • Yayasan Alkarim Rasyid Indonesia
+
+CHECKLIST SEBELUM PUBLIKASI (cari kata kunci di komentar HTML):
+1. TODO-FOTO      : ganti placeholder avatar/ilustrasi dengan foto ASLI
+                    pembina, pimpinan, kepala sekolah, santri & kegiatan.
+2. TODO-QR        : ganti area "QR CODE PENDAFTARAN" dengan QR formulir resmi.
+3. TODO-PRESTASI  : sisipkan daftar prestasi yang sudah diverifikasi pesantren.
+4. TODO-TESTIMONI : ganti 3 testimoni contoh dengan testimoni asli wali santri.
+5. Nomor WhatsApp : find & replace "6282280003961" bila nomor berubah.
+6. TODO-JADWAL    : sesuaikan tanggal countdown Gelombang 1 di script bawah.
+7. Kepatuhan iklan: seluruh copy menghindari klaim mutlak; materi turunan
+                    (banner, caption, video) wajib mengikuti panduan yang sama.
+═══════════════════════════════════════════════════════════════════
+-->
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"EducationalOrganization",
+  "name":"Pondok Pesantren Qur'an & Dakwah Alkarim Rasyid Indonesia",
+  "alternateName":"SMP Alkarim Rasyid",
+  "parentOrganization":"Yayasan Alkarim Rasyid Indonesia",
+  "telephone":"+6282280003961",
+  "sameAs":[
+    "https://www.instagram.com/ponpesalkarimrasyid",
+    "https://www.tiktok.com/@alkarimrasyid.ponpes"
+  ]
+}
+</script>
+
+    <!-- ═══ ANNOUNCEMENT BAR ═══ -->
+    <div class="bg-burgundy-800 text-ivory-100 text-center text-[11px] md:text-xs py-2 px-4">
+        <p>Pendaftaran <b>PMB 2027/2028 — Gelombang 1</b> telah dibuka. Kuota santri terbatas.
+            <a href="#kuota"
+                class="underline decoration-gold-400/70 underline-offset-2 text-gold-300 font-semibold hover:text-gold-200">Lihat
+                jadwal</a>
+        </p>
+    </div>
+
+    <!-- ═══ HEADER ═══ -->
+    <header id="siteHeader"
+        class="sticky top-0 z-40 bg-ivory-50/90 backdrop-blur border-b border-gold-500/20 transition-shadow">
+        <div class="max-w-3xl mx-auto px-4 h-14 flex items-center justify-between gap-3">
+            <a href="#hero" class="flex items-center gap-2.5 min-w-0">
+                <span class="w-9 h-9 rounded-full bg-burgundy-800 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                        <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                        <rect x="11.1" y="0.8" width="1.8" height="2.6" rx="0.9" />
+                    </svg>
+                </span>
+                <span class="leading-tight min-w-0">
+                    <span
+                        class="block font-display font-extrabold text-burgundy-900 text-[13px] md:text-sm tracking-wide">ALKARIM
+                        RASYID</span>
+                    <span class="block text-[10px] text-neutral-500 truncate">Pondok Pesantren Qur'an &amp;
+                        Dakwah</span>
+                </span>
+            </a>
+            <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                target="_blank" rel="noopener"
+                class="shrink-0 text-xs md:text-sm bg-burgundy-800 hover:bg-burgundy-700 text-white px-4 py-2 rounded-full font-display font-bold transition">Daftar
+                Sekarang</a>
+        </div>
+    </header>
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 1 — QUALIFY : HERO SECTION (Cinematic Opening)
+     ═══════════════════════════════════════════════════ -->
+    <section id="hero" class="relative overflow-hidden">
+
+        <!-- Latar langit senja pastel → hangat -->
+        <div class="absolute inset-0 bg-gradient-to-b from-blush-100 via-ivory-100 to-ivory-50" aria-hidden="true">
+        </div>
+
+        <!-- Scene sinematik di belakang: matahari, partikel emas, awan -->
+        <div class="absolute inset-0 scene-zoom pointer-events-none" aria-hidden="true">
+            <div class="sun-glow absolute right-[10%] top-[8%] w-44 h-44 md:w-72 md:h-72 rounded-full"
+                style="background:radial-gradient(circle,rgba(227,201,143,.95),rgba(201,164,92,.28) 55%,transparent 72%);filter:blur(6px)">
+            </div>
+            <div class="absolute right-[16%] top-[14%] w-16 h-16 md:w-24 md:h-24 rounded-full"
+                style="background:radial-gradient(circle,#F7ECD2,#E3C98F 70%);filter:blur(2px)"></div>
+            <div class="absolute -left-10 top-[24%] w-64 h-16 rounded-full bg-white/50 blur-2xl"></div>
+            <div class="absolute right-0 top-[42%] w-72 h-16 rounded-full bg-white/40 blur-2xl"></div>
+            <span class="particle"
+                style="left:10%;width:7px;height:7px;animation-duration:15s;animation-delay:0s"></span>
+            <span class="particle"
+                style="left:21%;width:5px;height:5px;animation-duration:18s;animation-delay:4s"></span>
+            <span class="particle"
+                style="left:33%;width:8px;height:8px;animation-duration:13s;animation-delay:2s"></span>
+            <span class="particle"
+                style="left:47%;width:5px;height:5px;animation-duration:20s;animation-delay:6s"></span>
+            <span class="particle"
+                style="left:58%;width:6px;height:6px;animation-duration:16s;animation-delay:1s"></span>
+            <span class="particle"
+                style="left:69%;width:5px;height:5px;animation-duration:21s;animation-delay:8s"></span>
+            <span class="particle"
+                style="left:80%;width:8px;height:8px;animation-duration:14s;animation-delay:3s"></span>
+            <span class="particle"
+                style="left:90%;width:5px;height:5px;animation-duration:17s;animation-delay:5s"></span>
+        </div>
+
+        <!-- Konten hero -->
+        <div class="relative z-10 max-w-3xl mx-auto px-4 pt-10 md:pt-16 text-center">
+            <div class="hero-in inline-flex items-center gap-2 bg-white/80 backdrop-blur border border-gold-500/50 rounded-full px-4 py-1.5 shadow-card"
+                style="animation-delay:.1s">
+                <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                <span class="text-[11px] md:text-xs font-bold tracking-wide text-burgundy-800 uppercase">Brosur Digital
+                    PMB 2027/2028 — Gelombang 1 Dibuka</span>
+            </div>
+
+            <h1 class="hero-in font-display text-[27px] leading-[1.18] md:text-5xl md:leading-[1.12] font-extrabold text-burgundy-900 mt-6"
+                style="animation-delay:.25s">
+                Sekolah Formal dan Al-Qur'an Tidak Harus Pilih Salah Satu
+                <span class="block mt-3 text-burgundy-600 font-bold text-lg md:text-2xl">Inilah perjalanan yang
+                    menyeimbangkan keduanya.</span>
+            </h1>
+
+            <p class="hero-in mt-5 text-[15px] md:text-lg text-neutral-600 leading-relaxed max-w-2xl mx-auto"
+                style="animation-delay:.4s">
+                <b class="text-burgundy-800">Brosur Digital Penerimaan Murid/Santri Baru</b> Pondok Pesantren Qur'an
+                &amp; Dakwah Alkarim Rasyid Indonesia membantu Bapak/Ibu mengenal program pendidikan, kegiatan santri,
+                prestasi, hingga langkah pendaftaran — sebelum mengambil keputusan yang menentukan masa depan anak.
+            </p>
+
+            <ul class="hero-in mt-6 space-y-2.5 text-left max-w-md mx-auto" style="animation-delay:.55s">
+                <li class="flex items-start gap-2.5 bg-white/70 border border-gold-500/25 rounded-2xl px-4 py-2.5"><span
+                        aria-hidden="true">📖</span><span class="text-sm text-neutral-700">Kurikulum nasional berjalan
+                        seiring pembinaan Al-Qur'an</span></li>
+                <li class="flex items-start gap-2.5 bg-white/70 border border-gold-500/25 rounded-2xl px-4 py-2.5"><span
+                        aria-hidden="true">🌱</span><span class="text-sm text-neutral-700">Lingkungan yang membiasakan
+                        kedisiplinan &amp; kemandirian</span></li>
+                <li class="flex items-start gap-2.5 bg-white/70 border border-gold-500/25 rounded-2xl px-4 py-2.5"><span
+                        aria-hidden="true">📲</span><span class="text-sm text-neutral-700">Informasi PMB lengkap: dari
+                        program hingga cara mendaftar</span></li>
+            </ul>
+
+            <div class="hero-in mt-8" style="animation-delay:.7s">
+                <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                    target="_blank" rel="noopener"
+                    class="btn-shine inline-flex items-center gap-2 bg-burgundy-800 hover:bg-burgundy-700 text-white font-display font-extrabold text-base md:text-lg px-9 py-4 rounded-full shadow-soft transition">Daftar
+                    Sekarang<span aria-hidden="true">→</span></a>
+                <!-- Hidden CTA: micro-copy trust -->
+                <p class="mt-3 text-xs md:text-[13px] text-neutral-500">Gratis &amp; tanpa komitmen • Data Bapak/Ibu
+                    aman • Direspons admin resmi PMB</p>
+                <a href="#program"
+                    class="inline-block mt-4 text-sm font-semibold text-burgundy-700 underline decoration-gold-500/60 underline-offset-4 hover:text-burgundy-600">atau
+                    pelajari dulu program pendidikannya ↓</a>
+            </div>
+        </div>
+
+        <!-- Laptop Mockup: tampilan brosur digital -->
+        <div class="relative z-10 max-w-xl mx-auto px-4 mt-12 md:mt-16">
+            <div class="relative">
+                <div class="absolute -inset-6 bg-gold-400/20 blur-3xl rounded-full" aria-hidden="true"></div>
+                <div class="relative floaty">
+                    <!-- TODO-FOTO: bagian layar laptop ini adalah mockup brosur — dapat diganti screenshot brosur asli -->
+                    <div class="rounded-t-2xl border-[6px] border-neutral-800 bg-neutral-900 p-1 shadow-soft">
+                        <div
+                            class="relative rounded-lg overflow-hidden aspect-[16/10] bg-gradient-to-br from-burgundy-900 via-burgundy-800 to-burgundy-900">
+                            <div class="absolute inset-0 pattern-star-gold opacity-60" aria-hidden="true"></div>
+                            <div class="absolute inset-3 rounded-md border border-gold-500/50" aria-hidden="true"></div>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                                <div
+                                    class="w-9 h-9 rounded-full bg-gold-500/20 border border-gold-400/60 flex items-center justify-center">
+                                    <svg class="w-4.5 h-4.5 w-5 h-5 text-gold-300" viewBox="0 0 24 24"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                                        <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                                    </svg>
+                                </div>
+                                <p class="mt-2 text-[7px] md:text-[9px] tracking-[0.28em] text-gold-300 font-semibold">
+                                    PENERIMAAN MURID/SANTRI BARU</p>
+                                <p class="font-display text-2xl md:text-4xl font-extrabold text-ivory-50 mt-1">PMB <span
+                                        class="text-gold-400">2027/2028</span></p>
+                                <div class="h-px w-24 bg-gold-500/60 my-2 md:my-3" aria-hidden="true"></div>
+                                <p class="text-[6px] md:text-[8px] tracking-[0.3em] text-ivory-100/80">BERILMU •
+                                    BERAKHLAK • BERDAKWAH</p>
+                                <div class="mt-3 md:mt-4 space-y-1.5" aria-hidden="true">
+                                    <div class="h-1 w-44 mx-auto bg-white/15 rounded"></div>
+                                    <div class="h-1 w-32 mx-auto bg-white/10 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-3 rounded-b-xl bg-gradient-to-b from-neutral-600 to-neutral-900 -mx-[4%] relative"
+                        aria-hidden="true">
+                        <div class="absolute left-1/2 -translate-x-1/2 top-0 w-16 h-1.5 bg-neutral-800 rounded-b-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-[11px] text-ivory-100/80 mt-4 drop-shadow">Tampilan Brosur Digital PMB 2027/2028
+                — dapat dibuka di ponsel, tablet, dan laptop</p>
+        </div>
+
+        <!-- Siluet pesantren sinematik di dasar hero -->
+        <svg class="absolute bottom-0 left-0 w-full h-40 md:h-56 text-burgundy-900 pointer-events-none"
+            viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+            <g fill="#5A0F1B" opacity=".25">
+                <rect x="120" y="150" width="150" height="60" />
+                <rect x="300" y="120" width="90" height="90" />
+                <path d="M330 120 L345 92 L360 120 Z" />
+                <path d="M520 170 Q600 96 680 170 Z" />
+                <rect x="500" y="110" width="10" height="60" />
+                <circle cx="505" cy="106" r="4" />
+                <rect x="1020" y="140" width="170" height="70" />
+                <rect x="1230" y="155" width="110" height="55" />
+            </g>
+            <g fill="currentColor">
+                <rect x="560" y="150" width="320" height="70" />
+                <path d="M600 150 C600 100 655 72 720 72 C785 72 840 100 840 150 Z" />
+                <circle cx="720" cy="66" r="5" />
+                <rect x="717" y="42" width="6" height="22" rx="2" />
+                <rect x="500" y="88" width="18" height="132" rx="3" />
+                <path d="M498 88 L509 62 L520 88 Z" />
+                <circle cx="509" cy="58" r="3.5" />
+                <rect x="922" y="88" width="18" height="132" rx="3" />
+                <path d="M920 88 L931 62 L942 88 Z" />
+                <circle cx="931" cy="58" r="3.5" />
+                <rect x="150" y="168" width="120" height="52" />
+                <rect x="290" y="182" width="70" height="38" />
+                <rect x="960" y="172" width="150" height="48" />
+                <rect x="1140" y="186" width="80" height="34" />
+                <circle cx="90" cy="186" r="26" />
+                <rect x="86" y="204" width="8" height="20" />
+                <circle cx="380" cy="192" r="20" />
+                <rect x="377" y="206" width="6" height="16" />
+                <path d="M1330 220 L1352 176 L1374 220 Z" />
+                <rect x="1349" y="214" width="6" height="12" />
+                <g transform="translate(1010,158)">
+                    <circle cx="2" cy="0" r="7.5" />
+                    <rect x="-7" y="9" width="17" height="27" rx="7" />
+                    <rect x="3" y="13" width="11" height="9" rx="1.5" transform="rotate(8 8 17)" />
+                    <rect x="-6" y="34" width="6.5" height="26" rx="3" />
+                    <rect x="4" y="34" width="6.5" height="26" rx="3" />
+                </g>
+                <g transform="translate(240,162)">
+                    <circle cx="0" cy="0" r="7" />
+                    <rect x="-8" y="9" width="16" height="26" rx="7" />
+                    <rect x="-7" y="33" width="6" height="25" rx="3" />
+                    <rect x="3" y="33" width="6" height="25" rx="3" />
+                </g>
+                <g transform="translate(1230,196)">
+                    <circle cx="0" cy="0" r="7" />
+                    <path d="M-9 28 Q-10 8 0 8 Q10 8 9 28 Z" />
+                    <rect x="6" y="10" width="14" height="10" rx="1.5" />
+                </g>
+                <rect x="0" y="218" width="1440" height="22" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 2 — UNDERSTAND : Pain Points (Empati)
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-ivory-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Sebelum Memutuskan Pilihan
+                    Sekolah</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Apakah
+                    Bapak/Ibu Juga Sedang Memikirkan Hal Ini?</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Memilih SMP bagi putra-putri bukan
+                    keputusan kecil. Dari pendampingan banyak wali calon santri, ada tiga pertimbangan yang paling
+                    sering muncul — dan semuanya wajar untuk dipikirkan secara matang.</p>
+            </div>
+
+            <div class="mt-9 space-y-5">
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                            aria-hidden="true">🕌</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg leading-snug">Ingin anak dekat
+                                dengan Al-Qur'an, tanpa pendidikan formalnya terabaikan</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-2 leading-relaxed">Banyak orang tua
+                                khawatir anak terlalu sibuk dengan pelajaran sekolah hingga pembinaan Al-Qur'an
+                                terpinggirkan — atau sebaliknya, terlalu fokus mengaji hingga pelajaran formalnya
+                                tersentak. Keduanya penting, dan keduanya seharusnya bisa berjalan beriringan.</p>
+                            <p class="mt-3 text-sm text-gold-700 font-semibold italic">"Pendidikan formal dan pembinaan
+                                Al-Qur'an dalam satu perjalanan pendidikan."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.08s">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                            aria-hidden="true">🌱</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg leading-snug">Ingin anak tumbuh
+                                disiplin, mandiri, dan berakhlak</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-2 leading-relaxed">Lingkungan pergaulan
+                                dan kebiasaan harian sangat menentukan karakter anak di usia SMP. Orang tua mencari
+                                lingkungan yang konsisten menumbuhkan tanggung jawab dan kemandirian — bukan hanya di
+                                dalam kelas, tetapi juga dalam keseharian santri.</p>
+                            <p class="mt-3 text-sm text-gold-700 font-semibold italic">"Menumbuhkan generasi yang
+                                berilmu, berakhlak mulia, mandiri, dan bertanggung jawab."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.16s">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                            aria-hidden="true">🔍</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg leading-snug">Bingung
+                                membandingkan sekolah dan pesantren</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-2 leading-relaxed">Informasi tentang
+                                program pendidikan, kegiatan santri, prestasi, persyaratan, dan cara pendaftaran sering
+                                tersebar di banyak tempat. Akibatnya, perbandingan menjadi lama, dan keputusan yang
+                                penting justru tertunda.</p>
+                            <p class="mt-3 text-sm text-gold-700 font-semibold italic">"Kenali programnya, temukan
+                                potensinya, dan mulai langkah pendidikan bersama Alkarim Rasyid."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal mt-8 bg-burgundy-50 border-l-4 border-gold-500 rounded-3xl p-6 md:p-8">
+                <p class="text-[15px] md:text-base text-burgundy-900 leading-relaxed">
+                    Pertimbangan seperti ini justru tanda Bapak/Ibu serius memikirkan masa depan anak. Kabar baiknya:
+                    <b>Bapak/Ibu tidak perlu memilih di antara keduanya.</b> Di Alkarim Rasyid, pendidikan formal SMP
+                    dan pembinaan Al-Qur'an dirancang berjalan dalam satu perjalanan yang seimbang — dan brosur digital
+                    ini akan membantu Bapak/Ibu melihatnya secara utuh sebelum memutuskan.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 1): Perkenalan Lembaga
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-50 to-blush-50 overflow-hidden">
+        <div class="absolute -right-16 top-10 w-64 h-64 rounded-full bg-gold-200/30 blur-3xl" aria-hidden="true"></div>
+        <div class="max-w-3xl mx-auto relative">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Solusi yang Dicari Banyak Orang
+                    Tua</p>
+                <div
+                    class="w-16 h-16 mx-auto mt-5 rounded-full bg-burgundy-800 flex items-center justify-center shadow-soft">
+                    <svg class="w-8 h-8 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                        <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                        <rect x="11.1" y="0.8" width="1.8" height="2.6" rx="0.9" />
+                    </svg>
+                </div>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-5 leading-snug">Pondok
+                    Pesantren Qur'an &amp; Dakwah Alkarim Rasyid Indonesia</h2>
+                <p class="mt-4 text-lg md:text-xl text-burgundy-700 font-display font-bold italic leading-relaxed">
+                    "Membentuk Generasi Qur'ani, Berilmu, Berakhlak &amp; Berdakwah."</p>
+                <p class="text-neutral-600 mt-5 leading-relaxed max-w-2xl mx-auto">Diselenggarakan oleh <b>Yayasan
+                        Alkarim Rasyid Indonesia</b> dengan unit pendidikan formal <b>SMP Alkarim Rasyid</b>, pesantren
+                    ini memadukan kurikulum nasional dengan pembinaan Al-Qur'an, dakwah, dan pembentukan karakter. Semua
+                    berjalan dalam keseharian santri — di kelas, di mushola, hingga kegiatan kepemimpinan dan
+                    organisasi.</p>
+                <div class="mt-6 flex flex-wrap items-center justify-center gap-2.5">
+                    <span
+                        class="text-[11px] md:text-xs font-bold tracking-[0.18em] text-burgundy-800 bg-white border border-gold-500/50 rounded-full px-4 py-2 shadow-card">BERILMU</span>
+                    <span
+                        class="text-[11px] md:text-xs font-bold tracking-[0.18em] text-burgundy-800 bg-white border border-gold-500/50 rounded-full px-4 py-2 shadow-card">BERAKHLAK</span>
+                    <span
+                        class="text-[11px] md:text-xs font-bold tracking-[0.18em] text-burgundy-800 bg-white border border-gold-500/50 rounded-full px-4 py-2 shadow-card">BERDAKWAH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 2): Mengapa Memilih
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-blush-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Mengapa Memilih Alkarim Rasyid?
+                </p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">
+                    Pendidikan yang Memadukan Al-Qur'an, Ilmu, Akhlak, dan Pembinaan Karakter</h2>
+            </div>
+
+            <div class="mt-9 space-y-5">
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-xl"
+                            aria-hidden="true">📖</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg">Pendidikan Terintegrasi</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-1.5 leading-relaxed">Pendidikan formal
+                                SMP berjalan bersama pembinaan hafalan, tilawah, dan pemahaman Al-Qur'an. Keduanya bukan
+                                program yang terpisah, melainkan satu rangkaian keseharian yang saling menguatkan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.08s">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-xl"
+                            aria-hidden="true">🌱</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg">Pembentukan Karakter</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-1.5 leading-relaxed">Kedisiplinan,
+                                kemandirian, dan tanggung jawab dibiasakan melalui tata tertib pesantren, keteladanan
+                                pembina, serta kegiatan harian yang terstruktur. Karakter tumbuh dari kebiasaan — bukan
+                                dari imbauan sesekali.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.16s">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-xl"
+                            aria-hidden="true">🎯</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg">Pengembangan Potensi</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-1.5 leading-relaxed">Tapak Suci,
+                                Pramuka, Dai, Tilawah/Qari, Hadroh, dan olahraga tersedia sebagai wahana bagi anak untuk
+                                menemukan bakat, membangun kepercayaan diri, dan belajar bekerja sama.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.24s">
+                    <div class="flex items-start gap-4">
+                        <span
+                            class="shrink-0 w-12 h-12 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-xl"
+                            aria-hidden="true">📣</span>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900 text-lg">Penguatan Dakwah</h3>
+                            <p class="text-sm md:text-[15px] text-neutral-600 mt-1.5 leading-relaxed">Kemampuan bahasa,
+                                komunikasi, dan dakwah dibina secara bertahap agar anak tumbuh menjadi pribadi yang
+                                percaya diri dan bermanfaat bagi keluarga serta lingkungannya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 3): Isi Brosur Digital
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-ivory-100 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Tentang Brosur Digital</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Satu
+                    Brosur Digital, Semua Informasi Penting PMB</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Brosur Digital PMB 2027/2028 disusun
+                    agar Bapak/Ibu tidak perlu bertanya dari satu sumber ke sumber lain. Semua yang paling penting
+                    dirangkum rapi, elegan, dan mudah dibaca di ponsel.</p>
+            </div>
+
+            <!-- Ilustrasi brosur (gaya ilustrasi bisnis modern — TODO-FOTO: dapat diganti mockup brosur asli) -->
+            <div class="reveal mt-8">
+                <svg viewBox="0 0 200 160" class="w-44 md:w-56 mx-auto" aria-hidden="true">
+                    <ellipse cx="100" cy="148" rx="64" ry="8" fill="#5A0F1B" opacity=".08" />
+                    <rect x="46" y="26" width="96" height="112" rx="8" fill="#F0E7D8" transform="rotate(-6 94 82)" />
+                    <g transform="rotate(4 110 84)">
+                        <rect x="64" y="22" width="96" height="116" rx="8" fill="#5A0F1B" />
+                        <rect x="70" y="28" width="84" height="104" rx="6" fill="none" stroke="#C9A45C"
+                            stroke-width="1.4" opacity=".8" />
+                        <rect x="82" y="44" width="60" height="7" rx="3.5" fill="#F7F1E7" opacity=".9" />
+                        <rect x="90" y="58" width="44" height="5" rx="2.5" fill="#C9A45C" />
+                        <circle cx="112" cy="84" r="14" fill="none" stroke="#C9A45C" stroke-width="1.4" />
+                        <path d="M112 74l2.6 6.6 6.9.4-5.3 4.4 1.8 6.8-6-3.8-6 3.8 1.8-6.8-5.3-4.4 6.9-.4z"
+                            fill="#C9A45C" />
+                        <rect x="84" y="112" width="56" height="4" rx="2" fill="#F7F1E7" opacity=".35" />
+                        <rect x="92" y="121" width="40" height="4" rx="2" fill="#F7F1E7" opacity=".25" />
+                    </g>
+                    <g fill="#C9A45C">
+                        <circle cx="42" cy="38" r="3" />
+                        <circle cx="170" cy="52" r="2.5" />
+                        <circle cx="160" cy="132" r="3" />
+                    </g>
+                </svg>
+            </div>
+
+            <div class="reveal mt-8 bg-white rounded-3xl border border-gold-500/40 shadow-card p-6 md:p-9">
+                <h3 class="font-display font-bold text-burgundy-900 text-lg md:text-xl text-center">Yang Bapak/Ibu
+                    dapatkan di dalamnya:</h3>
+                <ul class="mt-5 space-y-3.5 max-w-xl mx-auto">
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Profil lembaga, visi, dan misi
+                            pendidikan</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Tiga pilar program pendidikan yang berjalan
+                            seimbang</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Enam kegiatan ekstrakurikuler santri</span>
+                    </li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Capaian dan prestasi santri</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Persyaratan dan alur pendaftaran, langkah
+                            demi langkah</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Perkenalan pembina, pimpinan pondok, dan
+                            kepala sekolah</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Kontak admin WhatsApp dan area QR Code
+                            pendaftaran resmi</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-xs font-bold mt-0.5">✓</span><span
+                            class="text-sm md:text-[15px] text-neutral-700">Identitas visual burgundy–emas yang elegan,
+                            konsisten, dan mudah dibaca</span></li>
+                </ul>
+                <p class="mt-6 text-center text-xs md:text-sm text-neutral-500">Dibagikan dalam format digital — bisa
+                    dibuka kapan saja dan diteruskan ke keluarga.</p>
+            </div>
+
+            <!-- Conversion Block tengah -->
+            <div
+                class="reveal mt-10 bg-gradient-to-br from-blush-50 to-ivory-100 border border-gold-500/40 rounded-3xl p-7 md:p-9 text-center shadow-card">
+                <p class="text-xs font-bold uppercase tracking-[0.2em] text-gold-700">Penerimaan Santri Baru 2027/2028
+                </p>
+                <h3 class="font-display font-extrabold text-burgundy-900 text-xl md:text-2xl mt-2 leading-snug">Minta
+                    Brosur Digital PMB Sekarang — Gratis</h3>
+                <p class="text-sm text-neutral-600 mt-2 max-w-xl mx-auto leading-relaxed">Dibagikan gratis kepada wali
+                    calon santri. Bapak/Ibu bebas membaca dulu, bertanya dulu, lalu memutuskan.</p>
+                <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                    target="_blank" rel="noopener"
+                    class="btn-shine mt-5 inline-flex bg-burgundy-800 hover:bg-burgundy-700 text-white font-display font-bold px-8 py-3.5 rounded-full text-base shadow-soft transition">Daftar
+                    Sekarang</a>
+                <!-- Hidden CTA: micro-copy trust -->
+                <p class="text-[11px] text-neutral-500 mt-3">Gratis • Tanpa komitmen • Data Bapak/Ibu aman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 4): Tiga Pilar Program
+     ═══════════════════════════════════════════════════ -->
+    <section id="program" class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-100 to-ivory-50">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Program Pendidikan</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Tiga
+                    Pilar yang Berjalan Seimbang Setiap Hari</h2>
+            </div>
+
+            <div class="mt-9 space-y-5">
+                <div class="reveal bg-white rounded-3xl border-l-4 border-gold-500 shadow-card p-6 md:p-7">
+                    <div class="flex items-center gap-3">
+                        <span class="w-11 h-11 rounded-2xl bg-blush-100 flex items-center justify-center text-xl"
+                            aria-hidden="true">📖</span>
+                        <h3 class="font-display font-extrabold text-burgundy-900 text-lg md:text-xl">1. Tahfidz &amp;
+                            Al-Qur'an</h3>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-sm md:text-[15px] text-neutral-600">
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Pembinaan hafalan
+                            Al-Qur'an</li>
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Tilawah</li>
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Pemahaman Al-Qur'an</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gold-700 font-semibold italic">"Dekat dengan Al-Qur'an, bertumbuh dalam
+                        iman, dan membangun akhlak."</p>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border-l-4 border-gold-500 shadow-card p-6 md:p-7"
+                    style="transition-delay:.08s">
+                    <div class="flex items-center gap-3">
+                        <span class="w-11 h-11 rounded-2xl bg-blush-100 flex items-center justify-center text-xl"
+                            aria-hidden="true">🎓</span>
+                        <h3 class="font-display font-extrabold text-burgundy-900 text-lg md:text-xl">2. Pendidikan
+                            Formal SMP</h3>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-sm md:text-[15px] text-neutral-600">
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Kurikulum nasional</li>
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Integrasi nilai-nilai
+                            keislaman dalam pembelajaran</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gold-700 font-semibold italic">"Menumbuhkan semangat belajar dan
+                        membangun bekal pendidikan untuk masa depan."</p>
+                </div>
+
+                <div class="reveal bg-white rounded-3xl border-l-4 border-gold-500 shadow-card p-6 md:p-7"
+                    style="transition-delay:.16s">
+                    <div class="flex items-center gap-3">
+                        <span class="w-11 h-11 rounded-2xl bg-blush-100 flex items-center justify-center text-xl"
+                            aria-hidden="true">📣</span>
+                        <h3 class="font-display font-extrabold text-burgundy-900 text-lg md:text-xl">3. Dakwah &amp;
+                            Pengembangan Diri</h3>
+                    </div>
+                    <ul class="mt-4 space-y-2 text-sm md:text-[15px] text-neutral-600">
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Penguatan bahasa untuk
+                            wawasan global</li>
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Pembinaan kedisiplinan,
+                            kemandirian, dan tanggung jawab</li>
+                        <li class="flex gap-2.5"><span class="text-gold-600 font-bold">•</span>Pengembangan kemampuan
+                            komunikasi dan dakwah</li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gold-700 font-semibold italic">"Mempersiapkan generasi Qur'ani yang
+                        berilmu, berakhlak, dan siap berdakwah."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 5): Visi & Misi
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-ivory-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Arah Pendidikan</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3">Visi &amp; Misi</h2>
+            </div>
+
+            <div class="reveal mt-9 bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-9">
+                <h3 class="font-display font-extrabold text-burgundy-900 text-lg md:text-xl flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-gold-500"></span>Visi</h3>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-[11px] font-bold mt-0.5">1</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Terciptanya generasi Qur'ani
+                            dan Dai Rabbani.</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center text-[11px] font-bold mt-0.5">2</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Terciptanya generasi terbaik
+                            yang beriman, berakhlak mulia, berilmu, cakap, unggul, dan berprestasi.</span></li>
+                </ul>
+
+                <div class="divider-gold my-7"><span class="text-gold-600 text-xs" aria-hidden="true">◆</span></div>
+
+                <h3 class="font-display font-extrabold text-burgundy-900 text-lg md:text-xl flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-gold-500"></span>Misi</h3>
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">1</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Pendidikan berbasis
+                            pesantren Qur'an dan dakwah melalui teori, praktik, pelatihan, dan pengabdian umat.</span>
+                    </li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">2</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Pembelajaran integral yang
+                            berbasis nilai-nilai Islam.</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">3</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Peningkatan kualitas insani
+                            yang unggul dalam ibadah, moral, intelektual, dan sosial.</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">4</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Menjadikan SMP Alkarim
+                            sebagai pusat keunggulan pendidikan dan pembelajaran.</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">5</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Manajemen mutu pendidikan
+                            berbasis pelayanan dan digitalisasi.</span></li>
+                    <li class="flex items-start gap-3"><span
+                            class="shrink-0 w-6 h-6 rounded-full bg-gold-500/20 text-gold-700 flex items-center justify-center text-[11px] font-bold mt-0.5">6</span><span
+                            class="text-sm md:text-[15px] text-neutral-700 leading-relaxed">Kepemimpinan sekolah yang
+                            Knowledgeable, Accountable, Respectful, Inovatif, dan Meaningful (KARIM).</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 6): Tim Pembina & Pimpinan
+     ═══════════════════════════════════════════════════ -->
+    <section id="tim" class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-50 to-blush-50">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Kenali Para Pembina</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Di
+                    Balik Alkarim Rasyid: Orang-Orang yang Membina Anak Anda</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Kepercayaan dimulai dari perkenalan.
+                    Berikut figur-figur yang memimpin dan membina perjalanan pendidikan santri — diperkenalkan langsung
+                    kepada wali calon santri.</p>
+            </div>
+
+            <div class="mt-10">
+                <p
+                    class="reveal inline-block text-[11px] font-bold uppercase tracking-[0.18em] text-gold-700 bg-gold-500/15 border border-gold-500/40 rounded-full px-4 py-1.5">
+                    Pembina Yayasan / Pondok Pesantren</p>
+                <div class="mt-4 space-y-4">
+                    <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 text-center">
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blush-100 to-ivory-200 border-2 border-gold-500/60 flex items-center justify-center overflow-hidden">
+                            <img src="alm-h-budiono.jpg" alt="Alm. H. Budiono — Pembina Yayasan / Pondok Pesantren" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-display font-bold text-burgundy-900 mt-4 text-base leading-snug">Alm. H. Budiono
+                        </h3>
+                        <p class="text-xs md:text-sm text-neutral-500 mt-1">Pembina Yayasan / Pondok Pesantren</p>
+                    </div>
+                    <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 text-center"
+                        style="transition-delay:.08s">
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blush-100 to-ivory-200 border-2 border-gold-500/60 flex items-center justify-center overflow-hidden">
+                            <img src="hj-ana-yuliana.jpg" alt="Hj. Ana Yuliana (Bunda Ana) — Pembina Yayasan / Pondok Pesantren" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-display font-bold text-burgundy-900 mt-4 text-base leading-snug">Hj. Ana Yuliana
+                            (Bunda Ana)</h3>
+                        <p class="text-xs md:text-sm text-neutral-500 mt-1">Pembina Yayasan / Pondok Pesantren</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10">
+                <p
+                    class="reveal inline-block text-[11px] font-bold uppercase tracking-[0.18em] text-gold-700 bg-gold-500/15 border border-gold-500/40 rounded-full px-4 py-1.5">
+                    Pimpinan Pendidikan</p>
+                <div class="mt-4 space-y-4">
+                    <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 text-center">
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blush-100 to-ivory-200 border-2 border-gold-500/60 flex items-center justify-center overflow-hidden">
+                            <img src="ustadz-asep.jpg" alt="Ustadz Dr. H. Asep Holis Nurjamil, S.H.I., M.Kom.I." class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-display font-bold text-burgundy-900 mt-4 text-base leading-snug">Ustadz Dr. H.
+                            Asep Holis Nurjamil, S.H.I., M.Kom.I.</h3>
+                        <p class="text-xs md:text-sm text-neutral-500 mt-1">Pimpinan Pondok Pesantren Qur'an &amp;
+                            Dakwah Alkarim Rasyid Indonesia</p>
+                    </div>
+                    <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 text-center"
+                        style="transition-delay:.08s">
+                        <div
+                            class="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-blush-100 to-ivory-200 border-2 border-gold-500/60 flex items-center justify-center overflow-hidden">
+                            <img src="ustadz-samhari.jpg" alt="Ustadz Samhari, S.Sos. — Kepala Sekolah SMP Alkarim Rasyid" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="font-display font-bold text-burgundy-900 mt-4 text-base leading-snug">Ustadz Samhari,
+                            S.Sos.</h3>
+                        <p class="text-xs md:text-sm text-neutral-500 mt-1">Kepala Sekolah SMP Alkarim Rasyid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 7): Ekstrakurikuler
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-blush-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Ekstrakurikuler</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">
+                    Kembangkan Potensi, Temukan Bakatmu</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Enam pilihan kegiatan untuk membantu
+                    setiap santri menemukan bidang yang paling menghidupkan potensinya — dari ketangkasan, keterampilan
+                    berorganisasi, hingga seni Islami.</p>
+            </div>
+
+            <div class="mt-9 space-y-4">
+                <div
+                    class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">🥋</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Tapak Suci</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Membangun ketangkasan, fokus, dan
+                            sportivitas melalui pencak silat.</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4"
+                    style="transition-delay:.06s">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">⛺</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Pramuka</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Melatih kemandirian, kerja sama, dan
+                            jiwa kepemimpinan di alam terbuka.</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4"
+                    style="transition-delay:.12s">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">📢</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Dai</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Mengasah kemampuan berbicara di depan
+                            umum, membaca Al-Qur'an, dan berdakwah.</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4"
+                    style="transition-delay:.18s">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">📿</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Tilawah / Qari</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Menyempurnakan bacaan dan memperdalam
+                            seni tilawah Al-Qur'an.</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4"
+                    style="transition-delay:.24s">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">🥁</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Hadroh</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Menumbuhkan kecintaan pada seni Islami
+                            yang penuh kekhusyukan.</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-5 md:p-6 flex items-start gap-4"
+                    style="transition-delay:.3s">
+                    <span
+                        class="shrink-0 w-12 h-12 rounded-2xl bg-blush-100 border border-gold-500/30 flex items-center justify-center text-xl"
+                        aria-hidden="true">⚽</span>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Olahraga</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Menjaga kebugaran jasmani dan
+                            menumbuhkan semangat kerja sama tim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 3 — EDUCATE (bagian 8): Capaian & Prestasi
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-ivory-100 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Capaian Santri</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Terus
+                    Bertumbuh • Terus Berprestasi • Terus Menginspirasi</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Santri Alkarim Rasyid dibina untuk
+                    berlomba dalam kebaikan — di kelas, di mushola, hingga panggung kompetisi. Pembinaan prestasi
+                    mencakup lima bidang utama:</p>
+            </div>
+
+            <div class="reveal mt-7 flex flex-wrap items-center justify-center gap-2.5">
+                <span
+                    class="text-xs font-semibold text-burgundy-800 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">Prestasi
+                    Akademik</span>
+                <span
+                    class="text-xs font-semibold text-burgundy-800 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">Prestasi
+                    Keagamaan</span>
+                <span
+                    class="text-xs font-semibold text-burgundy-800 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">Tahfidz
+                    &amp; Tilawah</span>
+                <span
+                    class="text-xs font-semibold text-burgundy-800 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">Prestasi
+                    Olahraga</span>
+                <span
+                    class="text-xs font-semibold text-burgundy-800 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">Seni
+                    &amp; Dakwah</span>
+            </div>
+
+            <!-- TODO-PRESTASI: sisipkan di sini daftar prestasi yang telah diverifikasi pesantren
+         (nama kompetisi, tahun, kategori, tingkat pencapaian — sesuai sumber asli). -->
+            <div class="reveal mt-7 bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7">
+                <p class="text-sm md:text-[15px] text-neutral-600 leading-relaxed">Rincian prestasi terverifikasi —
+                    beserta nama kegiatan, tahun, dan tingkat pencapaiannya — tersedia dalam Brosur Digital PMB dan
+                    selalu diperbarui oleh tim pesantren. Untuk data terkini, Bapak/Ibu dapat menanyakannya langsung
+                    kepada admin PMB.</p>
+                <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20rincian%20prestasi%20santri%20Alkarim%20Rasyid%20beserta%20Brosur%20Digital%20PMB%202027%2F2028."
+                    target="_blank" rel="noopener"
+                    class="inline-flex items-center gap-1.5 mt-4 text-sm font-bold text-burgundy-700 hover:text-burgundy-600 underline decoration-gold-500/60 underline-offset-4">Minta
+                    rincian prestasi via WhatsApp <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     PORTFOLIO — Lingkungan Pesantren
+     ═══════════════════════════════════════════════════ -->
+    <section id="lingkungan" class="relative py-14 md:py-20 px-4 bg-ivory-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Lingkungan Pesantren</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Suasana
+                    yang Mendukung Tumbuh Kembang Santri</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Lingkungan berperan besar membentuk
+                    kebiasaan. Inilah suasana yang akan Bapak/Ibu temukan di Alkarim Rasyid setiap hari.</p>
+            </div>
+
+            <div class="mt-9 space-y-6">
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <!-- TODO-FOTO: ganti ilustrasi di bawah dengan foto asli suasana mengaji & tahfidz -->
+                    <div class="aspect-[16/9] bg-gradient-to-br from-blush-100 via-ivory-100 to-gold-100 relative">
+                        <svg viewBox="0 0 400 225" class="absolute inset-0 w-full h-full"
+                            preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <ellipse cx="200" cy="196" rx="120" ry="10" fill="#5A0F1B" opacity=".07" />
+                            <path d="M170 120 C170 92 185 78 200 78 C215 78 230 92 230 120 Z" fill="#5A0F1B"
+                                opacity=".85" />
+                            <rect x="140" y="120" width="120" height="56" rx="6" fill="#5A0F1B" opacity=".85" />
+                            <rect x="196" y="66" width="8" height="14" rx="3" fill="#5A0F1B" />
+                            <path
+                                d="M120 196 Q160 172 200 196 Q240 172 280 196 L280 214 Q240 194 200 214 Q160 194 120 214 Z"
+                                fill="#82202C" />
+                            <path d="M200 196 L200 214" stroke="#F7F1E7" stroke-width="2" />
+                            <circle cx="330" cy="70" r="22" fill="#C9A45C" opacity=".8" />
+                            <g fill="#C9A45C">
+                                <circle cx="80" cy="60" r="4" />
+                                <circle cx="360" cy="130" r="3" />
+                            </g>
+                        </svg>
+                    </div>
+                    <figcaption class="p-5 md:p-6">
+                        <h3 class="font-display font-bold text-burgundy-900">Suasana Mengaji &amp; Tahfidz</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Pembinaan Al-Qur'an berlangsung
+                            terjadwal dan terbimbing, menjadi bagian dari ritme harian santri.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card overflow-hidden"
+                    style="transition-delay:.08s">
+                    <!-- TODO-FOTO: ganti ilustrasi di bawah dengan foto asli kegiatan belajar mengajar -->
+                    <div class="aspect-[16/9] bg-gradient-to-br from-ivory-100 via-blush-50 to-ivory-200 relative">
+                        <svg viewBox="0 0 400 225" class="absolute inset-0 w-full h-full"
+                            preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <ellipse cx="200" cy="198" rx="130" ry="9" fill="#5A0F1B" opacity=".07" />
+                            <rect x="90" y="60" width="220" height="110" rx="8" fill="#390913" />
+                            <rect x="102" y="72" width="196" height="86" rx="5" fill="#F7F1E7" opacity=".12" />
+                            <rect x="120" y="90" width="120" height="8" rx="4" fill="#C9A45C" opacity=".9" />
+                            <rect x="120" y="108" width="90" height="7" rx="3.5" fill="#F7F1E7" opacity=".55" />
+                            <rect x="120" y="124" width="140" height="7" rx="3.5" fill="#F7F1E7" opacity=".35" />
+                            <rect x="120" y="140" width="70" height="7" rx="3.5" fill="#F7F1E7" opacity=".25" />
+                            <rect x="130" y="176" width="10" height="24" fill="#5A0F1B" />
+                            <rect x="260" y="176" width="10" height="24" fill="#5A0F1B" />
+                        </svg>
+                    </div>
+                    <figcaption class="p-5 md:p-6">
+                        <h3 class="font-display font-bold text-burgundy-900">Kegiatan Belajar Mengajar</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Proses belajar di kelas berjalan dengan
+                            kurikulum nasional, dipandu guru yang mengintegrasikan nilai keislaman.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card overflow-hidden"
+                    style="transition-delay:.16s">
+                    <!-- TODO-FOTO: ganti ilustrasi di bawah dengan foto asli kegiatan ekstrakurikuler -->
+                    <div class="aspect-[16/9] bg-gradient-to-br from-gold-50 via-blush-100 to-ivory-100 relative">
+                        <svg viewBox="0 0 400 225" class="absolute inset-0 w-full h-full"
+                            preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                            <ellipse cx="200" cy="200" rx="120" ry="9" fill="#5A0F1B" opacity=".07" />
+                            <circle cx="200" cy="96" r="34" fill="none" stroke="#B08D45" stroke-width="6" />
+                            <path d="M200 84l7.6 5.5-2.9 9h-9.4l-2.9-9z" fill="#B08D45" />
+                            <path d="M178 120 L166 168 L200 150 L234 168 L222 120" fill="#82202C" />
+                            <rect x="160" y="164" width="80" height="10" rx="5" fill="#5A0F1B" />
+                            <circle cx="320" cy="150" r="20" fill="none" stroke="#B08D45" stroke-width="5" />
+                            <path d="M320 136v28M306 150h28" stroke="#B08D45" stroke-width="5" />
+                            <g fill="#C9A45C">
+                                <circle cx="80" cy="70" r="4" />
+                                <circle cx="120" cy="180" r="3" />
+                            </g>
+                        </svg>
+                    </div>
+                    <figcaption class="p-5 md:p-6">
+                        <h3 class="font-display font-bold text-burgundy-900">Kegiatan Ekstrakurikuler</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Santri mengembangkan bakat melalui enam
+                            pilihan kegiatan — Tapak Suci, Pramuka, Dai, Tilawah/Qari, Hadroh, dan olahraga.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 4 — STIMULATE : Testimoni
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-50 to-blush-50">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Suara Wali Santri</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3">Apa Kata Wali Santri
+                </h2>
+            </div>
+
+            <!-- TODO-TESTIMONI: 3 testimoni di bawah adalah CONTOH — ganti dengan testimoni asli
+         wali santri (nama, kota, foto) sebelum dipublikasikan untuk menjaga kejujuran iklan. -->
+            <div class="mt-9 space-y-5">
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7">
+                    <div class="text-gold-500 tracking-widest text-sm" aria-label="Penilaian lima bintang"
+                        aria-hidden="true">★★★★★</div>
+                    <blockquote class="mt-3 text-[15px] text-neutral-700 leading-relaxed">"Yang membuat kami mantap:
+                        anak belajar ilmu sekolah tetap terbina Al-Qur'an-nya. Sekarang dia lebih teratur dan mandiri di
+                        rumah."</blockquote>
+                    <figcaption class="mt-4 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blush-100 border border-gold-500/40 text-burgundy-800 font-display font-bold flex items-center justify-center"
+                            aria-hidden="true">R</span>
+                        <span><span class="block text-sm font-bold text-burgundy-900">Ibu Ratna</span><span
+                                class="block text-xs text-neutral-500">Wali Santri — Semarang</span></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.08s">
+                    <div class="text-gold-500 tracking-widest text-sm" aria-hidden="true">★★★★★</div>
+                    <blockquote class="mt-3 text-[15px] text-neutral-700 leading-relaxed">"Pihak sekolah komunikatif.
+                        Sebelum mendaftar, kami bertanya banyak lewat WhatsApp dan semuanya dijawab dengan sabar dan
+                        jelas."</blockquote>
+                    <figcaption class="mt-4 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blush-100 border border-gold-500/40 text-burgundy-800 font-display font-bold flex items-center justify-center"
+                            aria-hidden="true">H</span>
+                        <span><span class="block text-sm font-bold text-burgundy-900">Bapak Hendra</span><span
+                                class="block text-xs text-neutral-500">Wali Santri — Bekasi</span></span>
+                    </figcaption>
+                </figure>
+
+                <figure class="reveal bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-7"
+                    style="transition-delay:.16s">
+                    <div class="text-gold-500 tracking-widest text-sm" aria-hidden="true">★★★★★</div>
+                    <blockquote class="mt-3 text-[15px] text-neutral-700 leading-relaxed">"Anak kami menemukan bakatnya
+                        di kegiatan dai dan hadroh. Dia jadi lebih percaya diri berbicara di depan orang banyak."
+                    </blockquote>
+                    <figcaption class="mt-4 flex items-center gap-3">
+                        <span
+                            class="w-10 h-10 rounded-full bg-blush-100 border border-gold-500/40 text-burgundy-800 font-display font-bold flex items-center justify-center"
+                            aria-hidden="true">L</span>
+                        <span><span class="block text-sm font-bold text-burgundy-900">Ibu Lestari</span><span
+                                class="block text-xs text-neutral-500">Wali Santri — Malang</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <p class="reveal mt-6 text-center text-[11px] text-neutral-400 italic">Setiap testimoni merupakan pengalaman
+                pribadi masing-masing keluarga.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     SOCIAL PROOF — Alkarim Rasyid dalam Angka (faktual)
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-blush-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Social Proof</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3">Alkarim Rasyid dalam
+                    Angka</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Struktur yang jelas membuat orang tua
+                    mudah memahami perjalanan pendidikan anaknya sejak awal.</p>
+            </div>
+
+            <div class="reveal mt-9 bg-white rounded-3xl border border-gold-500/25 shadow-card p-2 md:p-3">
+                <div class="flex items-center gap-5 px-4 md:px-6 py-5 border-b border-gold-500/15">
+                    <span
+                        class="font-display text-4xl md:text-5xl font-extrabold text-gold-600 w-16 text-center shrink-0">3</span>
+                    <span class="text-sm md:text-base text-neutral-700"><b class="text-burgundy-900">Pilar Pendidikan
+                            Terintegrasi</b> — formal, Al-Qur'an, dan dakwah berjalan seimbang</span>
+                </div>
+                <div class="flex items-center gap-5 px-4 md:px-6 py-5 border-b border-gold-500/15">
+                    <span
+                        class="font-display text-4xl md:text-5xl font-extrabold text-gold-600 w-16 text-center shrink-0">6</span>
+                    <span class="text-sm md:text-base text-neutral-700"><b class="text-burgundy-900">Pilihan
+                            Ekstrakurikuler</b> — wahana anak menemukan bakat dan kepercayaan diri</span>
+                </div>
+                <div class="flex items-center gap-5 px-4 md:px-6 py-5 border-b border-gold-500/15">
+                    <span
+                        class="font-display text-4xl md:text-5xl font-extrabold text-gold-600 w-16 text-center shrink-0">4</span>
+                    <span class="text-sm md:text-base text-neutral-700"><b class="text-burgundy-900">Figur Pembina &amp;
+                            Pimpinan</b> — diperkenalkan langsung kepada wali calon santri</span>
+                </div>
+                <div class="flex items-center gap-5 px-4 md:px-6 py-5">
+                    <span
+                        class="font-display text-4xl md:text-5xl font-extrabold text-gold-600 w-16 text-center shrink-0">6</span>
+                    <span class="text-sm md:text-base text-neutral-700"><b class="text-burgundy-900">Langkah
+                            Pendaftaran</b> — alur yang jelas dari formulir hingga persetujuan wali</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 4 — STIMULATE : Comparison
+     ═══════════════════════════════════════════════════ -->
+    <section id="perbandingan" class="relative py-14 md:py-20 px-4 bg-ivory-100 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Membantu Bapak/Ibu Membandingkan
+                </p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Membaca
+                    Pilihan Pendidikan dengan Lebih Jernih</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Setiap keluarga punya prioritas
+                    berbeda. Tabel berikut membantu memetakan perbedaan umum antar pilihan pendidikan — dan posisi
+                    Alkarim Rasyid sebagai perpaduannya.</p>
+            </div>
+
+            <div class="reveal mt-9 bg-white rounded-3xl border border-gold-500/25 shadow-card overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[600px] text-sm">
+                        <thead>
+                            <tr class="bg-blush-100 text-burgundy-900">
+                                <th class="text-left font-display font-bold px-4 md:px-5 py-4">Aspek yang
+                                    Dipertimbangkan</th>
+                                <th
+                                    class="text-center font-display font-bold px-3 py-4 text-xs md:text-sm leading-tight">
+                                    Sekolah Umum<br><span
+                                        class="font-normal text-[10px] text-neutral-500">(umumnya)</span></th>
+                                <th
+                                    class="text-center font-display font-bold px-3 py-4 text-xs md:text-sm leading-tight">
+                                    Pesantren Penuh Waktu<br><span
+                                        class="font-normal text-[10px] text-neutral-500">(umumnya)</span></th>
+                                <th
+                                    class="text-center font-display font-bold px-3 py-4 text-xs md:text-sm leading-tight bg-gold-500/15">
+                                    Alkarim Rasyid<br><span
+                                        class="font-normal text-[10px] text-burgundy-700">perpaduan</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gold-500/15 text-neutral-600">
+                            <tr>
+                                <td class="text-left px-4 md:px-5 py-3.5">Kurikulum nasional jenjang SMP</td>
+                                <td class="text-center px-3 py-3.5"><span class="text-emerald-600 font-bold">✓</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5"><span class="text-amber-600 font-semibold">±</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5 bg-gold-500/10 font-semibold text-burgundy-800"><span
+                                        class="text-emerald-600 font-bold">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left px-4 md:px-5 py-3.5">Pembinaan hafalan &amp; tilawah Al-Qur'an</td>
+                                <td class="text-center px-3 py-3.5"><span class="text-amber-600 font-semibold">±</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5"><span class="text-emerald-600 font-bold">✓</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5 bg-gold-500/10 font-semibold text-burgundy-800"><span
+                                        class="text-emerald-600 font-bold">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left px-4 md:px-5 py-3.5">Pembinaan dakwah &amp; bahasa</td>
+                                <td class="text-center px-3 py-3.5"><span class="text-neutral-300">—</span></td>
+                                <td class="text-center px-3 py-3.5"><span class="text-emerald-600 font-bold">✓</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5 bg-gold-500/10 font-semibold text-burgundy-800"><span
+                                        class="text-emerald-600 font-bold">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left px-4 md:px-5 py-3.5">Ekstrakurikuler beragam (silat, pramuka, seni,
+                                    olahraga)</td>
+                                <td class="text-center px-3 py-3.5"><span class="text-emerald-600 font-bold">✓</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5"><span class="text-amber-600 font-semibold">±</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5 bg-gold-500/10 font-semibold text-burgundy-800"><span
+                                        class="text-emerald-600 font-bold">✓</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-left px-4 md:px-5 py-3.5">Lingkungan asrama &amp; kedisiplinan harian
+                                </td>
+                                <td class="text-center px-3 py-3.5"><span class="text-neutral-300">—</span></td>
+                                <td class="text-center px-3 py-3.5"><span class="text-emerald-600 font-bold">✓</span>
+                                </td>
+                                <td class="text-center px-3 py-3.5 bg-gold-500/10 font-semibold text-burgundy-800"><span
+                                        class="text-emerald-600 font-bold">✓</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p
+                    class="px-5 py-4 text-[11px] md:text-xs text-neutral-500 leading-relaxed border-t border-gold-500/15 bg-ivory-50">
+                    Keterangan: <b class="text-emerald-600">✓</b> umumnya tersedia • <b class="text-amber-600">±</b>
+                    bergantung lembaga • <b class="text-neutral-400">—</b> umumnya bukan fokus utama. Gambaran umum
+                    untuk keperluan perbandingan; program tiap lembaga dapat berbeda. Silakan verifikasi langsung kepada
+                    lembaga terkait.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════
+     GUARANTEE — Tanpa Risiko
+     ═══════════════════════════════════════════════════ -->
+    <section id="tanpa-risiko" class="relative py-14 md:py-20 px-4 bg-ivory-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Tanpa Risiko</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Bebas
+                    Tanya Dulu, Putuskan Kemudian</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Kami memahami bahwa keputusan
+                    pendidikan butuh ruang. Karena itu, permintaan brosur dan konsultasi dirancang semudah dan seringan
+                    mungkin — tanpa tekanan apa pun.</p>
+            </div>
+
+            <div class="reveal mt-9 bg-white rounded-3xl border border-gold-500/40 shadow-card p-6 md:p-9">
+                <ul class="space-y-4 max-w-xl mx-auto">
+                    <li class="flex items-start gap-3.5">
+                        <span
+                            class="shrink-0 w-8 h-8 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mt-0.5">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                        </span>
+                        <span class="text-sm md:text-[15px] text-neutral-700 leading-relaxed"><b
+                                class="text-burgundy-900">Brosur digital gratis</b> — tidak ada biaya untuk meminta dan
+                            membacanya.</span>
+                    </li>
+                    <li class="flex items-start gap-3.5">
+                        <span
+                            class="shrink-0 w-8 h-8 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mt-0.5">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                        </span>
+                        <span class="text-sm md:text-[15px] text-neutral-700 leading-relaxed"><b
+                                class="text-burgundy-900">Tanpa tekanan</b> — Bapak/Ibu bebas memutuskan melanjutkan
+                            pendaftaran atau tidak.</span>
+                    </li>
+                    <li class="flex items-start gap-3.5">
+                        <span
+                            class="shrink-0 w-8 h-8 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mt-0.5">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                        </span>
+                        <span class="text-sm md:text-[15px] text-neutral-700 leading-relaxed"><b
+                                class="text-burgundy-900">Data aman</b> — kontak yang Bapak/Ibu berikan hanya digunakan
+                            untuk keperluan informasi PMB.</span>
+                    </li>
+                    <li class="flex items-start gap-3.5">
+                        <span
+                            class="shrink-0 w-8 h-8 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center mt-0.5">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                        </span>
+                        <span class="text-sm md:text-[15px] text-neutral-700 leading-relaxed"><b
+                                class="text-burgundy-900">Bisa konsultasi dulu</b> — tim admin siap menjawab pertanyaan
+                            sebelum Bapak/Ibu mengambil keputusan.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     PROCESS STEPS — 6 Langkah Pendaftaran
+     ═══════════════════════════════════════════════════ -->
+    <section id="alur" class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-50 to-blush-50">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Cara Daftar</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Enam
+                    Langkah Menjadi Keluarga Besar Alkarim Rasyid</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Alur pendaftarannya sederhana dan
+                    terpandu. Admin PMB akan mendampingi Bapak/Ibu di setiap tahap.</p>
+            </div>
+
+            <ol class="reveal tl mt-10 space-y-0">
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        1</div>
+                    <div class="pb-8">
+                        <h3 class="font-display font-bold text-burgundy-900">Isi Formulir Pendaftaran</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Hubungi admin PMB melalui WhatsApp atau
+                            scan QR Code pendaftaran, lalu isi formulir dengan data calon santri.</p>
+                    </div>
+                </li>
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        2</div>
+                    <div class="pb-8">
+                        <h3 class="font-display font-bold text-burgundy-900">Lengkapi Dokumen Persyaratan</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Daftar dokumen yang diperlukan akan
+                            diinformasikan dan dibantu pengecekannya oleh admin PMB.</p>
+                    </div>
+                </li>
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        3</div>
+                    <div class="pb-8">
+                        <h3 class="font-display font-bold text-burgundy-900">Ikuti Proses Seleksi / Tes Masuk</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Calon santri mengikuti seleksi sesuai
+                            jadwal yang diumumkan. Teknis dan materinya dijelaskan admin terlebih dahulu.</p>
+                    </div>
+                </li>
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        4</div>
+                    <div class="pb-8">
+                        <h3 class="font-display font-bold text-burgundy-900">Lengkapi Administrasi Pendaftaran</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Setelah dinyatakan lolos, Bapak/Ibu
+                            menyelesaikan administrasi pendaftaran melalui pihak pesantren.</p>
+                    </div>
+                </li>
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        5</div>
+                    <div class="pb-8">
+                        <h3 class="font-display font-bold text-burgundy-900">Bersedia Mengikuti Tata Tertib Pesantren
+                        </h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Santri dan wali memahami serta
+                            menyetujui tata tertib yang menjadi bagian dari pembinaan karakter.</p>
+                    </div>
+                </li>
+                <li class="relative flex gap-4 md:gap-5">
+                    <div
+                        class="shrink-0 w-10 h-10 rounded-full bg-gold-500 text-burgundy-900 font-display font-extrabold flex items-center justify-center ring-4 ring-ivory-50 z-10">
+                        6</div>
+                    <div>
+                        <h3 class="font-display font-bold text-burgundy-900">Persetujuan Orang Tua / Wali</h3>
+                        <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Dengan restu orang tua/wali, perjalanan
+                            pendidikan santri di Alkarim Rasyid resmi dimulai.</p>
+                    </div>
+                </li>
+            </ol>
+
+            <p class="reveal mt-6 text-center text-xs text-neutral-500">Rincian dokumen dan jadwal seleksi akan
+                dijelaskan langsung oleh admin PMB.</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     TIMELINE — Peta Jalan PMB 2027/2028
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-14 md:py-20 px-4 bg-blush-50 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Perjalanan PMB</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Peta
+                    Jalan Menuju Tahun Ajaran 2027/2028</h2>
+            </div>
+
+            <div class="reveal mt-10 bg-white rounded-3xl border border-gold-500/25 shadow-card p-6 md:p-9">
+                <div class="tl space-y-0">
+                    <div class="relative flex gap-4 md:gap-5">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-full bg-burgundy-800 text-gold-300 flex items-center justify-center ring-4 ring-white z-10 font-display font-extrabold text-sm">
+                            1</div>
+                        <div class="pb-8">
+                            <div class="flex flex-wrap items-center gap-2">
+                                <h3 class="font-display font-bold text-burgundy-900">Gelombang 1 — Pendaftaran Dibuka
+                                </h3>
+                                <span
+                                    class="text-[10px] font-bold uppercase tracking-wider bg-gold-500/20 text-gold-700 border border-gold-500/40 rounded-full px-2.5 py-0.5">Sedang
+                                    Berjalan</span>
+                            </div>
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Permintaan brosur, konsultasi, dan
+                                pendaftaran gelombang pertama. Kuota terbatas.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-4 md:gap-5">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gold-500/50 text-gold-700 flex items-center justify-center ring-4 ring-white z-10 font-display font-extrabold text-sm">
+                            2</div>
+                        <div class="pb-8">
+                            <h3 class="font-display font-bold text-burgundy-900">Gelombang 2 — Menyusul</h3>
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Dibuka apabila kuota Gelombang 1
+                                telah terisi. Jadwal resmi diumumkan admin PMB.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-4 md:gap-5">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gold-500/50 text-gold-700 flex items-center justify-center ring-4 ring-white z-10 font-display font-extrabold text-sm">
+                            3</div>
+                        <div class="pb-8">
+                            <h3 class="font-display font-bold text-burgundy-900">Seleksi &amp; Pengumuman</h3>
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Sesuai jadwal tiap gelombang. Hasil
+                                diinformasikan langsung kepada wali melalui WhatsApp.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-4 md:gap-5">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-full bg-white border-2 border-gold-500/50 text-gold-700 flex items-center justify-center ring-4 ring-white z-10 font-display font-extrabold text-sm">
+                            4</div>
+                        <div class="pb-8">
+                            <h3 class="font-display font-bold text-burgundy-900">Daftar Ulang</h3>
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Bagi calon santri yang dinyatakan
+                                lolos seleksi, dilanjutkan administrasi daftar ulang.</p>
+                        </div>
+                    </div>
+                    <div class="relative flex gap-4 md:gap-5">
+                        <div
+                            class="shrink-0 w-10 h-10 rounded-full bg-gold-500 text-burgundy-900 flex items-center justify-center ring-4 ring-white z-10">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                                <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-burgundy-900">Masuk Tahun Ajaran 2027/2028</h3>
+                            <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Awal perjalanan pendidikan santri
+                                baru di Alkarim Rasyid (perkiraan Juli 2027).</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-6 text-[11px] text-neutral-400 italic">Jadwal bersifat indikatif — konfirmasi tanggal resmi
+                    melalui admin PMB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 4 — STIMULATE : Scarcity + Countdown
+     ═══════════════════════════════════════════════════ -->
+    <section id="kuota" class="relative py-14 md:py-20 px-4 bg-ivory-100 pattern-star">
+        <div class="max-w-3xl mx-auto">
+            <div
+                class="reveal bg-gradient-to-br from-blush-50 via-ivory-50 to-gold-50 border border-gold-500/50 rounded-3xl shadow-card p-7 md:p-10 text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">Catatan Penting</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3 leading-snug">Kuota
+                    Setiap Gelombang Terbatas</h2>
+                <p class="text-neutral-600 mt-4 leading-relaxed max-w-2xl mx-auto">Daya tampung kelas dan asrama sengaja
+                    dibatasi agar kualitas pembinaan tetap terjaga. Ketika kuota satu gelombang terisi, pendaftar akan
+                    diarahkan ke gelombang berikutnya. Permintaan brosur tetap gratis — yang terbatas adalah kuota dan
+                    penanganannya.</p>
+
+                <p class="mt-7 text-sm font-bold text-burgundy-800 uppercase tracking-wider">Gelombang 1 berakhir dalam:
+                </p>
+                <div id="countdown" class="flex items-stretch justify-center gap-2.5 md:gap-4 mt-4" role="timer"
+                    aria-label="Waktu berakhirnya Gelombang 1">
+                    <div
+                        class="cd-box bg-white rounded-2xl border border-gold-500/40 shadow-card px-3 py-3 md:px-5 text-center">
+                        <p id="cdDays"
+                            class="font-display text-3xl md:text-4xl font-extrabold text-burgundy-900 leading-none tabular-nums">
+                            00</p>
+                        <p class="text-[10px] md:text-xs text-neutral-500 font-semibold tracking-wider mt-1.5">HARI</p>
+                    </div>
+                    <div
+                        class="cd-box bg-white rounded-2xl border border-gold-500/40 shadow-card px-3 py-3 md:px-5 text-center">
+                        <p id="cdHours"
+                            class="font-display text-3xl md:text-4xl font-extrabold text-burgundy-900 leading-none tabular-nums">
+                            00</p>
+                        <p class="text-[10px] md:text-xs text-neutral-500 font-semibold tracking-wider mt-1.5">JAM</p>
+                    </div>
+                    <div
+                        class="cd-box bg-white rounded-2xl border border-gold-500/40 shadow-card px-3 py-3 md:px-5 text-center">
+                        <p id="cdMins"
+                            class="font-display text-3xl md:text-4xl font-extrabold text-burgundy-900 leading-none tabular-nums">
+                            00</p>
+                        <p class="text-[10px] md:text-xs text-neutral-500 font-semibold tracking-wider mt-1.5">MENIT</p>
+                    </div>
+                    <div
+                        class="cd-box bg-white rounded-2xl border border-gold-500/40 shadow-card px-3 py-3 md:px-5 text-center">
+                        <p id="cdSecs"
+                            class="font-display text-3xl md:text-4xl font-extrabold text-burgundy-900 leading-none tabular-nums">
+                            00</p>
+                        <p class="text-[10px] md:text-xs text-neutral-500 font-semibold tracking-wider mt-1.5">DETIK</p>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                    target="_blank" rel="noopener"
+                    class="btn-shine mt-8 inline-flex bg-burgundy-800 hover:bg-burgundy-700 text-white font-display font-extrabold px-9 py-4 rounded-full text-base md:text-lg shadow-soft transition">Daftar
+                    Sekarang</a>
+                <!-- Hidden CTA: micro-copy trust -->
+                <p class="text-[11px] text-neutral-500 mt-3">Gratis • Tanpa komitmen • Direspons admin resmi PMB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     FAQ — Pertanyaan yang Sering Diajukan
+     ═══════════════════════════════════════════════════ -->
+    <section id="faq" class="relative py-14 md:py-20 px-4 bg-gradient-to-b from-ivory-100 to-ivory-50">
+        <div class="max-w-3xl mx-auto">
+            <div class="reveal text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.22em] text-gold-700">FAQ</p>
+                <h2 class="font-display text-2xl md:text-4xl font-extrabold text-burgundy-900 mt-3">Pertanyaan yang
+                    Sering Diajukan</h2>
+            </div>
+
+            <div class="mt-9 space-y-3.5">
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Apakah Brosur
+                            Digital PMB ini berbayar?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Tidak. Brosur dibagikan gratis kepada wali
+                            calon santri sebagai media informasi resmi PMB 2027/2028. Bapak/Ibu cukup menghubungi admin
+                            melalui WhatsApp, dan brosur akan segera dikirimkan.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Untuk jenjang
+                            pendidikan apa pendaftarannya?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Penerimaan ini untuk jenjang SMP melalui SMP
+                            Alkarim Rasyid, bagi anak lulusan SD/MI atau sederajat yang akan masuk kelas VII pada Tahun
+                            Ajaran 2027/2028.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Apakah menggunakan
+                            kurikulum nasional?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Ya. SMP Alkarim Rasyid menggunakan kurikulum
+                            nasional yang diintegrasikan dengan nilai-nilai keislaman serta pembinaan Al-Qur'an, dakwah,
+                            dan pembentukan karakter.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Apakah anak harus
+                            sudah lancar membaca Al-Qur'an?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Setiap anak datang dengan kemampuan yang
+                            berbeda-beda, dan pembinaan Al-Qur'an dilakukan secara terjadwal serta terbimbing. Untuk
+                            penjelasan detail mengenai pembinaan sesuai kemampuan anak, silakan bertanya langsung kepada
+                            admin PMB.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Bagaimana proses
+                            seleksinya?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Setelah formulir dan dokumen lengkap, calon
+                            santri akan mengikuti proses seleksi atau tes masuk sesuai jadwal yang diinformasikan admin.
+                            Rincian teknis dan materinya akan dijelaskan terlebih dahulu oleh admin PMB.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Di mana lokasi
+                            pesantren dan bagaimana berkunjung?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Informasi lengkap mengenai lokasi, alamat,
+                            serta jadwal kunjungan dapat diminta langsung kepada admin PMB melalui WhatsApp, agar data
+                            yang Bapak/Ibu terima selalu akurat dan terbaru.</p>
+                    </div>
+                </details>
+
+                <details class="faq reveal bg-white rounded-2xl border border-gold-500/25 shadow-card overflow-hidden">
+                    <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4">
+                        <span class="font-display font-bold text-burgundy-900 text-sm md:text-base">Berapa biaya
+                            pendidikannya?</span>
+                        <svg class="chev w-5 h-5 text-gold-600 shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </summary>
+                    <div class="px-5 md:px-6 pb-5 -mt-1">
+                        <p class="text-sm text-neutral-600 leading-relaxed">Rincian biaya pendidikan dijelaskan langsung
+                            oleh admin PMB beserta fasilitas yang Bapak/Ibu dapatkan. Kami menyarankan bertanya langsung
+                            melalui WhatsApp agar informasi yang diterima akurat dan terbaru.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+     TRUST BADGES
+     ═══════════════════════════════════════════════════ -->
+    <section class="relative py-10 md:py-14 px-4 bg-ivory-50 border-y border-gold-500/20">
+        <div class="max-w-3xl mx-auto reveal">
+            <p class="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-gold-700">Bisa Tenang
+                Menghubungi Kami</p>
+            <div class="mt-5 flex flex-wrap items-center justify-center gap-2.5">
+                <span
+                    class="inline-flex items-center gap-2 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">
+                    <svg class="w-4 h-4 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3l7 3v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6z" />
+                    </svg>
+                    <span class="text-xs font-semibold text-burgundy-900">Formulir &amp; Data Aman</span>
+                </span>
+                <span
+                    class="inline-flex items-center gap-2 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">
+                    <svg class="w-4 h-4 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12a9 9 0 11-2.6-6.3" />
+                        <path d="M21 3v6h-6" />
+                    </svg>
+                    <span class="text-xs font-semibold text-burgundy-900">Gratis, Tanpa Biaya</span>
+                </span>
+                <span
+                    class="inline-flex items-center gap-2 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">
+                    <svg class="w-4 h-4 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="5" y="11" width="14" height="9" rx="2" />
+                        <path d="M8 11V7a4 4 0 018 0v4" />
+                    </svg>
+                    <span class="text-xs font-semibold text-burgundy-900">Privasi Terlindungi</span>
+                </span>
+                <span
+                    class="inline-flex items-center gap-2 bg-white border border-gold-500/40 rounded-full px-4 py-2 shadow-card">
+                    <svg class="w-4 h-4 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 13a8 8 0 0116 0" />
+                        <rect x="3" y="13" width="4" height="6" rx="1.5" />
+                        <rect x="17" y="13" width="4" height="6" rx="1.5" />
+                        <path d="M19 19a3 3 0 01-3 3h-3" />
+                    </svg>
+                    <span class="text-xs font-semibold text-burgundy-900">Admin Responsif</span>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- ═══════════════════════════════════════════════════
+     QUEST 5 — TRANSITION : Final CTA (Cinematic Closing)
+     ═══════════════════════════════════════════════════ -->
+    <section id="daftar" class="relative overflow-hidden">
+        <!-- Suasana pagi hangat: cahaya keemasan -->
+        <div class="absolute inset-0 bg-gradient-to-b from-ivory-50 via-blush-50 to-[#F6E3D3]" aria-hidden="true"></div>
+        <div class="absolute inset-0 scene-zoom pointer-events-none" aria-hidden="true">
+            <div class="sun-glow absolute left-1/2 -translate-x-1/2 top-[6%] w-56 h-56 md:w-80 md:h-80 rounded-full"
+                style="background:radial-gradient(circle,rgba(227,201,143,.95),rgba(201,164,92,.25) 55%,transparent 72%);filter:blur(6px)">
+            </div>
+            <div class="absolute left-[18%] top-[18%] w-40 h-10 rounded-full bg-white/50 blur-2xl"></div>
+            <div class="absolute right-[12%] top-[30%] w-48 h-10 rounded-full bg-white/40 blur-2xl"></div>
+            <span class="particle"
+                style="left:16%;width:6px;height:6px;animation-duration:16s;animation-delay:1s"></span>
+            <span class="particle"
+                style="left:38%;width:5px;height:5px;animation-duration:19s;animation-delay:5s"></span>
+            <span class="particle"
+                style="left:60%;width:7px;height:7px;animation-duration:15s;animation-delay:2s"></span>
+            <span class="particle"
+                style="left:84%;width:5px;height:5px;animation-duration:21s;animation-delay:7s"></span>
+        </div>
+
+        <div class="relative z-10 max-w-3xl mx-auto px-4 pt-16 md:pt-24 pb-10 text-center">
+            <p class="reveal text-[11px] font-bold uppercase tracking-[0.3em] text-gold-700">Berilmu • Berakhlak •
+                Berdakwah</p>
+            <h2
+                class="reveal font-display text-[26px] md:text-5xl md:leading-[1.12] font-extrabold text-burgundy-900 mt-4 leading-snug">
+                Langkah Pendidikan Hari Ini,<br>Bekal Masa Depan Anak</h2>
+            <p class="reveal text-neutral-600 mt-5 leading-relaxed max-w-2xl mx-auto">Kenali program pendidikan kami dan
+                dapatkan informasi pendaftaran melalui admin PMB. Tim kami siap membantu Bapak/Ibu dengan ramah dan
+                cepat — membaca brosur dulu, bertanya dulu, juga sangat kami sambut.</p>
+
+            <div class="reveal mt-8">
+                <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                    target="_blank" rel="noopener"
+                    class="btn-shine inline-flex items-center gap-2 bg-burgundy-800 hover:bg-burgundy-700 text-white font-display font-extrabold text-base md:text-xl px-9 py-4 md:px-12 md:py-5 rounded-full shadow-soft transition">Ayo
+                    Bergabung Bersama Alkarim Rasyid<span aria-hidden="true">→</span></a>
+                <!-- Hidden CTA: micro-copy trust -->
+                <p class="mt-3 text-xs md:text-[13px] text-neutral-500">Gratis • Tanpa komitmen • Data Bapak/Ibu aman •
+                    Direspons admin resmi</p>
+            </div>
+
+            <!-- Kartu kontak resmi -->
+            <div
+                class="reveal mt-10 bg-white/90 backdrop-blur rounded-3xl border border-gold-500/40 shadow-card p-6 md:p-8 text-left max-w-xl mx-auto">
+                <h3 class="font-display font-extrabold text-burgundy-900 text-center text-lg">Kontak Resmi PMB 2027/2028
+                </h3>
+                <div class="mt-5 space-y-3">
+                    <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                        target="_blank" rel="noopener"
+                        class="flex items-center gap-3.5 bg-ivory-50 rounded-2xl border border-gold-500/30 px-5 py-4 hover:border-gold-500/70 transition">
+                        <span class="w-10 h-10 rounded-full bg-[#25D366]/15 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-[#1DA851]" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </span>
+                        <span class="min-w-0"><span class="block text-[11px] text-neutral-500">WhatsApp Admin
+                                PMB</span><span
+                                class="block font-display font-bold text-burgundy-900">0822-8000-3961</span></span>
+                        <svg class="w-4 h-4 text-gold-600 ml-auto shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/ponpesalkarimrasyid" target="_blank" rel="noopener"
+                        class="flex items-center gap-3.5 bg-ivory-50 rounded-2xl border border-gold-500/30 px-5 py-4 hover:border-gold-500/70 transition">
+                        <span class="w-10 h-10 rounded-full bg-blush-100 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-burgundy-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none" />
+                            </svg>
+                        </span>
+                        <span class="min-w-0"><span class="block text-[11px] text-neutral-500">Instagram</span><span
+                                class="block font-display font-bold text-burgundy-900 truncate">@ponpesalkarimrasyid</span></span>
+                        <svg class="w-4 h-4 text-gold-600 ml-auto shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@alkarimrasyid.ponpes" target="_blank" rel="noopener"
+                        class="flex items-center gap-3.5 bg-ivory-50 rounded-2xl border border-gold-500/30 px-5 py-4 hover:border-gold-500/70 transition">
+                        <span class="w-10 h-10 rounded-full bg-blush-100 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5 text-burgundy-700" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true">
+                                <path
+                                    d="M16.6 5.82A4.28 4.28 0 0115.54 3h-3.09v12.4a2.59 2.59 0 11-2.59-2.59c.27 0 .53.04.78.12V9.77a5.76 5.76 0 00-.78-.05 5.66 5.66 0 105.66 5.66V9.29a7.35 7.35 0 004.3 1.38V7.58a4.28 4.28 0 01-3.22-1.76z" />
+                            </svg>
+                        </span>
+                        <span class="min-w-0"><span class="block text-[11px] text-neutral-500">TikTok</span><span
+                                class="block font-display font-bold text-burgundy-900 truncate">@alkarimrasyid.ponpes</span></span>
+                        <svg class="w-4 h-4 text-gold-600 ml-auto shrink-0" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Area QR pendaftaran -->
+                <!-- TODO-QR: ganti blok ini dengan gambar QR Code formulir pendaftaran resmi:
+           <img src="qr-pendaftaran-resmi.png" alt="QR Code Pendaftaran PMB" class="w-44 h-44 mx-auto"> -->
+                <div class="mt-6 bg-ivory-50 rounded-3xl border-2 border-dashed border-gold-500/60 p-6 text-center">
+                    <svg class="w-14 h-14 mx-auto text-burgundy-800" viewBox="0 0 24 24" fill="currentColor"
+                        aria-hidden="true">
+                        <path
+                            d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm8-2h3v3h-3v-3zm5 0h3v3h-3v-3zm-5 5h3v3h-3v-3zm5 0h3v3h-3v-3z" />
+                    </svg>
+                    <p class="font-display font-extrabold text-burgundy-900 tracking-[0.18em] text-sm mt-3">QR CODE
+                        PENDAFTARAN</p>
+                    <p class="text-xs text-neutral-500 mt-1.5 leading-relaxed">Area QR resmi formulir pendaftaran. Untuk
+                        akses cepat, hubungi admin PMB melalui WhatsApp.</p>
+                </div>
+            </div>
+
+            <p class="reveal mt-10 text-lg md:text-xl text-burgundy-800 font-display font-bold italic">"Tumbuh dalam
+                Ilmu, Iman, Akhlak, dan Kemandirian."</p>
+        </div>
+
+        <!-- Siluet pagi di dasar section -->
+        <svg class="relative block w-full h-32 md:h-44 text-burgundy-900 opacity-90" viewBox="0 0 1440 200"
+            preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+            <g fill="currentColor">
+                <path d="M600 120 C600 82 650 60 720 60 C790 60 840 82 840 120 Z" opacity=".9" />
+                <rect x="560" y="118" width="320" height="60" opacity=".9" />
+                <rect x="500" y="70" width="14" height="108" rx="3" />
+                <path d="M498 70 L507 50 L516 70 Z" />
+                <rect x="926" y="70" width="14" height="108" rx="3" />
+                <path d="M924 70 L933 50 L942 70 Z" />
+                <rect x="140" y="132" width="110" height="46" />
+                <rect x="990" y="136" width="130" height="42" />
+                <circle cx="80" cy="156" r="22" />
+                <rect x="77" y="170" width="6" height="18" />
+                <circle cx="360" cy="162" r="17" />
+                <rect x="357" y="172" width="6" height="14" />
+                <path d="M1290 178 L1310 140 L1330 178 Z" />
+                <rect x="0" y="178" width="1440" height="22" />
+            </g>
+        </svg>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="bg-ivory-100 border-t border-gold-500/25 px-4 py-9">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-2.5 mb-4">
+                <span class="w-9 h-9 rounded-full bg-burgundy-800 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                        <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                        <rect x="11.1" y="0.8" width="1.8" height="2.6" rx="0.9" />
+                    </svg>
+                </span>
+                <span class="font-display font-extrabold text-burgundy-900 text-sm tracking-wide">ALKARIM RASYID</span>
+            </div>
+            <p class="text-xs md:text-sm text-neutral-600 leading-relaxed">Yayasan Alkarim Rasyid Indonesia • SMP
+                Alkarim Rasyid • Pondok Pesantren Qur'an &amp; Dakwah Alkarim Rasyid Indonesia</p>
+            <p class="text-[11px] text-neutral-400 mt-3 leading-relaxed">© <span data-year>2026</span> — Penerimaan
+                Murid/Santri Baru (PMB) 2027/2028. Informasi pada halaman ini dapat diperbarui sewaktu-waktu; konfirmasi
+                detail melalui kontak resmi admin PMB di atas.</p>
+        </div>
+    </footer>
+
+    <!-- Spacer agar konten bawah tidak tertutup sticky bar di mobile -->
+    <div class="h-2 md:hidden" aria-hidden="true"></div>
+
+    <!-- ═══════════════════════════════════════════════════
+     FLOATING: Tombol WhatsApp Melayang
+     ═══════════════════════════════════════════════════ -->
+    <a id="waFloat"
+        href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20bertanya%20tentang%20PMB%202027%2F2028%20Alkarim%20Rasyid."
+        target="_blank" rel="noopener" aria-label="Chat WhatsApp Admin PMB"
+        class="wa-pulse fixed z-40 right-4 bottom-24 md:right-6 md:bottom-6 w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1EBE5B] flex items-center justify-center shadow-soft transition">
+        <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <!-- ═══════════════════════════════════════════════════
+     STICKY BUTTON MOBILE
+     Muncul otomatis setelah pengguna melewati hero section.
+     Untuk mengubah teks/tautan, edit elemen #stickyBar di bawah.
+     ═══════════════════════════════════════════════════ -->
+    <div id="stickyBar" class="fixed bottom-0 inset-x-0 z-50 md:hidden">
+        <div class="bg-white/95 backdrop-blur border-t border-gold-500/30 px-4 py-3 flex items-center gap-3"
+            style="box-shadow:0 -8px 30px -18px rgba(57,9,19,.35)">
+            <div class="min-w-0 flex-1">
+                <p class="text-[13px] font-display font-bold text-burgundy-900 leading-tight">PMB 2027/2028 — Kuota
+                    Terbatas</p>
+                <p class="text-[10px] text-neutral-500 leading-tight mt-0.5">Brosur gratis • Data aman • Admin resmi</p>
+            </div>
+            <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                target="_blank" rel="noopener"
+                class="btn-shine shrink-0 bg-burgundy-800 hover:bg-burgundy-700 text-white text-sm font-display font-bold px-5 py-2.5 rounded-full transition">Daftar
+                Sekarang</a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+     ORDER NOTIFICATION (real-time, pojok kiri bawah)
+     Nama & kota acak + sound effect lembut. Maks. 9x per sesi.
+     ═══════════════════════════════════════════════════ -->
+    <div id="orderNotif"
+        class="fixed z-[55] left-3 bottom-24 md:left-6 md:bottom-6 max-w-[300px] md:max-w-xs opacity-0 pointer-events-none"
+        style="opacity:0" role="status" aria-live="polite">
+        <div class="bg-white rounded-2xl shadow-soft border border-gold-500/30 p-3 pr-2.5 flex items-start gap-3">
+            <div id="notifInitial"
+                class="w-10 h-10 shrink-0 rounded-full bg-blush-100 text-burgundy-800 font-display font-bold flex items-center justify-center border border-gold-500/40"
+                aria-hidden="true">R</div>
+            <div class="min-w-0 flex-1">
+                <p class="text-xs text-neutral-700 leading-snug"><span id="notifName"
+                        class="font-bold text-burgundy-900">Ibu Ratna</span> <span class="text-neutral-500">dari <span
+                            id="notifCity">Semarang</span></span></p>
+                <p id="notifAction" class="text-[11px] text-neutral-500 leading-snug mt-0.5">baru saja meminta Brosur
+                    Digital PMB 2027/2028</p>
+                <p class="text-[10px] text-gold-600 font-semibold mt-1 flex items-center gap-1"><span
+                        class="w-1.5 h-1.5 rounded-full bg-gold-500 animate-pulse" aria-hidden="true"></span><span
+                        id="notifTime">baru saja</span></p>
+            </div>
+            <button id="notifClose"
+                class="shrink-0 text-neutral-300 hover:text-neutral-500 text-sm leading-none px-1.5 py-0.5"
+                aria-label="Tutup notifikasi">✕</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+     EXIT INTENT POPUP — Penawaran Terakhir
+     ═══════════════════════════════════════════════════ -->
+    <div id="exitModal" class="hidden hide fixed inset-0 z-[70] flex items-center justify-center px-4" role="dialog"
+        aria-modal="true" aria-labelledby="exitTitle">
+        <div class="absolute inset-0 bg-burgundy-900/60 backdrop-blur-sm" aria-hidden="true"></div>
+        <div
+            class="panel relative bg-ivory-50 rounded-3xl border border-gold-500/40 shadow-soft max-w-md w-full p-7 md:p-9 text-center">
+            <button id="exitClose"
+                class="absolute top-4 right-4 w-8 h-8 rounded-full bg-blush-100 text-burgundy-800 flex items-center justify-center hover:bg-blush-200 transition"
+                aria-label="Tutup">✕</button>
+            <div class="w-14 h-14 mx-auto rounded-full bg-burgundy-800 flex items-center justify-center">
+                <svg class="w-7 h-7 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
+                    <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
+                    <rect x="11.1" y="0.8" width="1.8" height="2.6" rx="0.9" />
+                </svg>
+            </div>
+            <h3 id="exitTitle"
+                class="font-display font-extrabold text-burgundy-900 text-xl md:text-2xl mt-4 leading-snug">Sebelum
+                Bapak/Ibu pergi…</h3>
+            <p class="text-sm text-neutral-600 mt-3 leading-relaxed">Brosur Digital PMB 2027/2028 masih dapat Bapak/Ibu
+                minta <b class="text-burgundy-800">gratis</b> hari ini. Kuota penanganan <b>Gelombang 1</b> terbatas —
+                setelah terisi, pendaftar akan diarahkan ke gelombang berikutnya.</p>
+            <a href="https://wa.me/6282280003961?text=Assalamualaikum%2C%20saya%20ingin%20meminta%20Brosur%20Digital%20PMB%202027%2F2028%20Pondok%20Pesantren%20Qur%27an%20%26%20Dakwah%20Alkarim%20Rasyid%20Indonesia.%20Mohon%20informasinya."
+                target="_blank" rel="noopener"
+                class="btn-shine mt-6 inline-flex items-center justify-center gap-2 bg-burgundy-800 hover:bg-burgundy-700 text-white font-display font-bold px-7 py-3.5 rounded-full text-base shadow-soft transition">Ya,
+                Saya Minta Brosurnya</a>
+            <!-- Hidden CTA: micro-copy trust -->
+            <p class="text-[11px] text-neutral-500 mt-3">Gratis • Tanpa komitmen • Direspons admin resmi PMB</p>
+            <button id="exitStay" class="mt-4 text-xs text-neutral-400 underline hover:text-neutral-600">Lanjut membaca
+                halaman ini</button>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════════════ -->
+    <script>
+            (function () {
+                "use strict";
+
+                /* ---------- Scroll reveal ---------- */
+                var io = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (e) {
+                        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+                    });
+                }, { threshold: .12, rootMargin: "0px 0px -40px 0px" });
+                document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+                /* ---------- Header shadow saat scroll ---------- */
+                var hd = document.getElementById("siteHeader");
+                if (hd) {
+                    window.addEventListener("scroll", function () {
+                        hd.classList.toggle("header-scrolled", window.scrollY > 10);
+                    }, { passive: true });
+                }
+
+                /* ---------- Countdown Timer ----------
+                   TODO-JADWAL: ubah tanggal berakhirnya Gelombang 1 di baris berikut. */
+                var target = new Date("2027-01-31T23:59:59+07:00").getTime();
+                var cdDays = document.getElementById("cdDays"), cdHours = document.getElementById("cdHours"),
+                    cdMins = document.getElementById("cdMins"), cdSecs = document.getElementById("cdSecs"),
+                    cdWrap = document.getElementById("countdown"), cdTimer = null;
+                function pad(n) { return String(n).padStart(2, "0"); }
+                function tick() {
+                    var diff = target - Date.now();
+                    if (diff <= 0) {
+                        if (cdWrap) { cdWrap.innerHTML = '<p class="text-sm font-semibold text-burgundy-800 py-4">Gelombang 1 telah berakhir — hubungi admin PMB untuk informasi gelombang berikutnya.</p>'; }
+                        if (cdTimer) clearInterval(cdTimer);
+                        return;
+                    }
+                    if (cdDays) cdDays.textContent = pad(Math.floor(diff / 864e5));
+                    if (cdHours) cdHours.textContent = pad(Math.floor(diff % 864e5 / 36e5));
+                    if (cdMins) cdMins.textContent = pad(Math.floor(diff % 36e5 / 6e4));
+                    if (cdSecs) cdSecs.textContent = pad(Math.floor(diff % 6e4 / 1e3));
+                }
+                cdTimer = setInterval(tick, 1000); tick();
+
+                /* ---------- Sticky bar mobile ---------- */
+                var bar = document.getElementById("stickyBar"), hero = document.getElementById("hero");
+                if (bar && hero) {
+                    var visible = false;
+                    var onScroll = function () {
+                        var show = window.scrollY > Math.min(640, hero.offsetHeight * 0.7);
+                        if (show !== visible) { visible = show; bar.classList.toggle("bar-show", show); }
+                    };
+                    window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+                }
+
+                /* ---------- Sound effect lembut (Web Audio) ----------
+                   Hanya berbunyi setelah pengguna berinteraksi dengan halaman
+                   (mengikuti kebijakan autoplay browser). */
+                var audioCtx = null, interacted = false;
+                ["click", "touchstart", "keydown"].forEach(function (ev) {
+                    document.addEventListener(ev, function () { interacted = true; }, { once: true, passive: true });
+                });
+                function chime() {
+                    if (!interacted) return;
+                    try {
+                        audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+                        if (audioCtx.state === "suspended") { audioCtx.resume(); }
+                        var t = audioCtx.currentTime;
+                        [[783.99, 0], [1174.66, 0.16]].forEach(function (pair) {
+                            var f = pair[0], dl = pair[1];
+                            var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+                            o.type = "sine"; o.frequency.value = f;
+                            g.gain.setValueAtTime(0.0001, t + dl);
+                            g.gain.exponentialRampToValueAtTime(0.045, t + dl + 0.04);
+                            g.gain.exponentialRampToValueAtTime(0.0001, t + dl + 0.8);
+                            o.connect(g); g.connect(audioCtx.destination);
+                            o.start(t + dl); o.stop(t + dl + 0.9);
+                        });
+                    } catch (e) { }
+                }
+
+                /* ---------- Order Notification (real-time, pojok kiri bawah) ---------- */
+                var people = [["Ibu Ratna", "Semarang"], ["Bapak Hendra", "Bekasi"], ["Ibu Fitriani", "Bogor"],
+                ["Bapak Yusuf", "Tangerang"], ["Ibu Lestari", "Malang"], ["Bapak Iskandar", "Palembang"],
+                ["Ibu Nurul", "Depok"], ["Bapak Bambang", "Surabaya"], ["Ibu Sari", "Karawang"],
+                ["Bapak Ahmad", "Bandung"], ["Ibu Wulan", "Cimahi"], ["Bapak Fajar", "Depok"]];
+                var actions = ["baru saja meminta Brosur Digital PMB 2027/2028",
+                    "baru saja bertanya tentang PMB 2027/2028 via WhatsApp",
+                    "baru saja meminta informasi pendaftaran PMB"];
+                var times = ["baru saja", "1 menit lalu", "2 menit lalu", "3 menit lalu", "5 menit lalu"];
+                var notif = document.getElementById("orderNotif");
+                var elN = document.getElementById("notifName"), elC = document.getElementById("notifCity"),
+                    elA = document.getElementById("notifAction"), elT = document.getElementById("notifTime"),
+                    elI = document.getElementById("notifInitial");
+                var notifCount = 0, notifTimer = null, hideTimer = null;
+                function showNotif() {
+                    if (!notif || notifCount >= 9 || document.hidden) return;
+                    var p = people[Math.floor(Math.random() * people.length)];
+                    var a = actions[Math.floor(Math.random() * actions.length)];
+                    var t = times[Math.floor(Math.random() * times.length)];
+                    if (elN) elN.textContent = p[0];
+                    if (elC) elC.textContent = p[1];
+                    if (elA) elA.textContent = a;
+                    if (elT) elT.textContent = t;
+                    if (elI) elI.textContent = (p[0].replace(/^(Ibu|Bapak)\s*/, "").charAt(0) || "•").toUpperCase();
+                    notif.classList.remove("notif-out");
+                    notif.classList.add("notif-in");
+                    notif.style.opacity = "1";
+                    chime();
+                    notifCount++;
+                    hideTimer = setTimeout(function () {
+                        notif.classList.remove("notif-in"); notif.classList.add("notif-out");
+                    }, 6000);
+                    notifTimer = setTimeout(showNotif, 16000 + Math.random() * 14000);
+                }
+                if (notif) { setTimeout(showNotif, 8000); }
+                var nClose = document.getElementById("notifClose");
+                if (nClose) {
+                    nClose.addEventListener("click", function () {
+                        notifCount = 99;
+                        clearTimeout(notifTimer); clearTimeout(hideTimer);
+                        notif.classList.remove("notif-in"); notif.classList.add("notif-out");
+                    });
+                }
+
+                /* ---------- Exit Intent Popup ----------
+                   Desktop: kursor keluar ke atas jendela.
+                   Mobile: scroll cepat ke atas setelah membaca 55% halaman.
+                   Muncul maksimal 1x per sesi. */
+                var exitModal = document.getElementById("exitModal");
+                var exitShown = false;
+                try { exitShown = sessionStorage.getItem("pmbExitShown") === "1"; } catch (e) { }
+                function openExit() {
+                    if (exitShown || !exitModal) return;
+                    exitShown = true;
+                    try { sessionStorage.setItem("pmbExitShown", "1"); } catch (e) { }
+                    exitModal.classList.remove("hidden");
+                    requestAnimationFrame(function () { exitModal.classList.remove("hide"); });
+                    document.body.style.overflow = "hidden";
+                }
+                function closeExit() {
+                    if (!exitModal) return;
+                    exitModal.classList.add("hide");
+                    document.body.style.overflow = "";
+                    setTimeout(function () { exitModal.classList.add("hidden"); }, 350);
+                }
+                if (exitModal) {
+                    document.getElementById("exitClose").addEventListener("click", closeExit);
+                    document.getElementById("exitStay").addEventListener("click", closeExit);
+                    exitModal.addEventListener("click", function (e) { if (e.target === exitModal || e.target.parentElement === exitModal && e.target.classList.contains("absolute")) closeExit(); });
+                    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeExit(); });
+                    document.addEventListener("mouseout", function (e) {
+                        if (!e.relatedTarget && e.clientY <= 8) openExit();
+                    });
+                    var lastY = window.scrollY, deep = false;
+                    window.addEventListener("scroll", function () {
+                        var y = window.scrollY, doc = document.documentElement;
+                        if (y > (doc.scrollHeight - window.innerHeight) * 0.55) deep = true;
+                        if (deep && lastY - y > 140 && y < window.innerHeight * 0.4) openExit();
+                        lastY = y;
+                    }, { passive: true });
+                }
+
+                /* ---------- FAQ: tutup item lain saat satu dibuka ---------- */
+                document.querySelectorAll("details.faq").forEach(function (d) {
+                    d.addEventListener("toggle", function () {
+                        if (d.open) {
+                            document.querySelectorAll("details.faq").forEach(function (o) { if (o !== d) o.open = false; });
+                        }
+                    });
+                });
+
+                /* ---------- Tahun otomatis di footer ---------- */
+                document.querySelectorAll("[data-year]").forEach(function (el) {
+                    el.textContent = new Date().getFullYear();
+                });
+            })();
+    </script>
+
+</body>
+
+</html>
