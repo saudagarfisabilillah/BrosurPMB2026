@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -588,14 +588,14 @@
                         <div
                             class="relative rounded-2xl overflow-hidden bg-burgundy-950 flex items-center justify-center">
                             <!-- Brosur Cover Asli dengan object-contain agar utuh 100% -->
-                            <img src="assets/brosur-pmb-1.jpg"
+                            <img src="brosur-pmb-1.jpg"
                                 alt="Brosur Resmi PMB 2027/2028 Pondok Pesantren Qur'an & Dakwah Alkarim Rasyid Indonesia"
                                 class="w-full h-auto max-h-[580px] object-contain rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
                                 width="750" height="1060" fetchpriority="high">
 
                             <!-- Overlay Tombol Perbesar Brosur -->
                             <button type="button"
-                                onclick="openBrosurModal('assets/brosur-pmb-1.jpg', 'Brosur PMB 2027/2028 Halaman Depan')"
+                                onclick="openBrosurModal('brosur-pmb-1.jpg', 'Brosur PMB 2027/2028 Halaman Depan')"
                                 class="absolute bottom-3 right-3 bg-burgundy-950/90 hover:bg-gold-500 hover:text-burgundy-950 text-gold-300 border border-gold-500/50 text-xs font-bold px-3 py-1.5 rounded-lg shadow-gold flex items-center gap-1.5 transition">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -687,7 +687,7 @@
 
             <!-- Foto Utama Kampus dari Folder Bahan (Anti-Crop, Proporsional) -->
             <div class="reveal mt-10 rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-soft">
-                <img src="assets/gerbang-gedung-utama.jpg"
+                <img src="gerbang-gedung-utama.jpg"
                     alt="Gedung Utama dan Gerbang Pondok Pesantren Alkarim Rasyid Indonesia"
                     class="w-full h-auto max-h-[460px] object-cover" loading="lazy" decoding="async" width="1200"
                     height="900">
@@ -879,7 +879,7 @@
                 <div
                     class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300">
                     <div class="h-48 overflow-hidden bg-burgundy-950">
-                        <img src="assets/santri-tahfidz-quran.jpg"
+                        <img src="santri-tahfidz-quran.jpg"
                             alt="Halaqah Tahfidz dan Tilawah Al-Qur'an Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
@@ -901,7 +901,7 @@
                 <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300"
                     style="transition-delay:.1s">
                     <div class="h-48 overflow-hidden bg-burgundy-950 relative">
-                        <img src="assets/santri-formal-smp.jpg"
+                        <img src="santri-formal-smp.jpg"
                             alt="Pembelajaran Formal SMP Kurikulum Nasional Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
@@ -935,7 +935,7 @@
                 <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300"
                     style="transition-delay:.2s">
                     <div class="h-48 overflow-hidden bg-burgundy-950">
-                        <img src="assets/santri-batik-karakter.jpg"
+                        <img src="santri-batik-karakter.jpg"
                             alt="Pembinaan Karakter Santri Mandiri dan Berakhlak Alkarim Rasyid"
                             class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
@@ -1057,15 +1057,27 @@
                 </p>
             </div>
 
-            <!-- 1. Pembina Yayasan (Alm. H. Budiono & Hj. Ana Yuliana) - Cukup Fotonya Saja -->
+            <!-- 1. Pembina Yayasan (Ust. Hilman Fauzi, Alm. H. Budiono & Hj. Ana Yuliana) - Cukup Fotonya Saja -->
             <div class="mt-12">
                 <p class="reveal text-center text-xs font-bold uppercase tracking-widest text-gold-400 mb-6">
                     — Dewan Pembina Yayasan —
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                    <!-- Alm. H. Budiono (Cukup Fotonya Saja) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- Ust. Hilman Fauzi N, S.E.I., M.E.Sy. (Cukup Fotonya Saja) -->
                     <div
                         class="reveal bg-burgundy-900/90 rounded-3xl border-2 border-gold-500/50 p-3 shadow-soft hover:border-gold-300 transition duration-300 text-center flex flex-col justify-center">
+                        <div
+                            class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
+                            <img src="ustadz-hilman.jpg"
+                                alt="Ust. Hilman Fauzi N, S.E.I., M.E.Sy. — Pembina Yayasan Alkarim Rasyid Indonesia"
+                                class="w-full h-auto max-h-[440px] object-contain object-top" loading="lazy"
+                                decoding="async" width="500" height="660">
+                        </div>
+                    </div>
+
+                    <!-- Alm. H. Budiono (Cukup Fotonya Saja) -->
+                    <div class="reveal bg-burgundy-900/90 rounded-3xl border-2 border-gold-500/50 p-3 shadow-soft hover:border-gold-300 transition duration-300 text-center flex flex-col justify-center"
+                        style="transition-delay:.08s">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
                             <img src="alm-h-budiono.jpg" alt="Alm. H. Budiono — Pembina Yayasan / Pondok Pesantren"
@@ -1075,8 +1087,8 @@
                     </div>
 
                     <!-- Hj. Ana Yuliana / Bunda Ana (Cukup Fotonya Saja) -->
-                    <div class="reveal bg-burgundy-900/90 rounded-3xl border-2 border-gold-500/50 p-3 shadow-soft hover:border-gold-300 transition duration-300 text-center flex flex-col justify-center"
-                        style="transition-delay:.1s">
+                    <div class="reveal bg-burgundy-900/90 rounded-3xl border-2 border-gold-500/50 p-3 shadow-soft hover:border-gold-300 transition duration-300 text-center flex flex-col justify-center sm:col-span-2 md:col-span-1"
+                        style="transition-delay:.16s">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
                             <img src="hj-ana-yuliana.jpg"
@@ -1128,7 +1140,7 @@
                     <!-- Foto Asatidz Alkarim Utuh -->
                     <div
                         class="rounded-2xl overflow-hidden border border-gold-500/30 bg-burgundy-950 flex items-center justify-center">
-                        <img src="assets/asatidz-alkarim.jpg"
+                        <img src="asatidz-alkarim.jpg"
                             alt="Dewan Asatidz dan Guru Pondok Pesantren Alkarim Rasyid Indonesia"
                             class="w-full h-auto max-h-[460px] object-contain object-center" loading="lazy"
                             decoding="async" width="1400" height="933">
@@ -1200,7 +1212,7 @@
                         class="reveal bg-burgundy-900/90 rounded-3xl border-2 border-gold-500/50 p-2.5 shadow-soft hover:border-gold-300 transition duration-300 text-center flex flex-col justify-center">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
-                            <img src="assets/musyrif-aji-marta.jpg"
+                            <img src="musyrif-aji-marta.jpg"
                                 alt="Ustadz Aji Marta Muhammad — Musyrif Asrama Pondok Pesantren Alkarim Rasyid"
                                 class="w-full h-auto object-contain object-top" loading="lazy" decoding="async"
                                 width="800" height="747">
@@ -1212,7 +1224,7 @@
                         style="transition-delay:.08s">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
-                            <img src="assets/musyrif-erik-carloza.jpg"
+                            <img src="musyrif-erik-carloza.jpg"
                                 alt="Ustadz Erik Carloza — Musyrif Asrama Pondok Pesantren Alkarim Rasyid"
                                 class="w-full h-auto object-contain object-top" loading="lazy" decoding="async"
                                 width="800" height="747">
@@ -1224,7 +1236,7 @@
                         style="transition-delay:.16s">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
-                            <img src="assets/musyrif-hasbih-juliansyah.jpg"
+                            <img src="musyrif-hasbih-juliansyah.jpg"
                                 alt="Ustadz Hasbih Juliansyah — Musyrif Asrama Pondok Pesantren Alkarim Rasyid"
                                 class="w-full h-auto object-contain object-top" loading="lazy" decoding="async"
                                 width="800" height="747">
@@ -1236,7 +1248,7 @@
                         style="transition-delay:.24s">
                         <div
                             class="w-full bg-burgundy-950 rounded-2xl overflow-hidden border border-gold-500/30 flex items-center justify-center">
-                            <img src="assets/musyrif-kausar-rahmatullah.jpg"
+                            <img src="musyrif-kausar-rahmatullah.jpg"
                                 alt="Ustadz M. Kausar Rahmatullah — Musyrif Asrama Pondok Pesantren Alkarim Rasyid"
                                 class="w-full h-auto object-contain object-top" loading="lazy" decoding="async"
                                 width="800" height="747">
@@ -1271,7 +1283,7 @@
                 <div
                     class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/ekskul-tapak-suci.jpg" alt="Ekstrakurikuler Tapak Suci Santri Alkarim Rasyid"
+                        <img src="ekskul-tapak-suci.jpg" alt="Ekstrakurikuler Tapak Suci Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
                     </div>
@@ -1292,7 +1304,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
                     style="transition-delay:.08s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/ekskul-pramuka.jpg" alt="Ekstrakurikuler Pramuka Santri Alkarim Rasyid"
+                        <img src="ekskul-pramuka.jpg" alt="Ekstrakurikuler Pramuka Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
                     </div>
@@ -1313,7 +1325,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
                     style="transition-delay:.16s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/prestasi-juara.jpg" alt="Ekstrakurikuler Da'i dan Dakwah Santri Alkarim Rasyid"
+                        <img src="prestasi-juara.jpg" alt="Ekstrakurikuler Da'i dan Dakwah Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
                     </div>
@@ -1335,8 +1347,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
                     style="transition-delay:.24s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/ekskul-tilawah.jpg"
-                            alt="Ekstrakurikuler Tilawah dan Qori Santri Alkarim Rasyid"
+                        <img src="ekskul-tilawah.jpg" alt="Ekstrakurikuler Tilawah dan Qori Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
                     </div>
@@ -1357,8 +1368,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
                     style="transition-delay:.32s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/ekskul-hadroh.jpg"
-                            alt="Ekstrakurikuler Seni Rebana Hadroh Santri Alkarim Rasyid"
+                        <img src="ekskul-hadroh.jpg" alt="Ekstrakurikuler Seni Rebana Hadroh Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
                     </div>
@@ -1379,7 +1389,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
                     style="transition-delay:.4s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="assets/ekskul-olahraga.jpg"
+                        <img src="ekskul-olahraga.jpg"
                             alt="Ekstrakurikuler Olahraga Futsal, Voli dan Bulutangkis Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="750" height="1000">
@@ -1426,7 +1436,7 @@
             <!-- Dokumentasi Foto Prestasi Asli (Proporsional, Anti-Crop) -->
             <div class="reveal mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                 <div class="rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-soft bg-burgundy-950">
-                    <img src="assets/prestasi-juara.jpg" alt="Santri Alkarim Rasyid Juara Lomba dan Memegang Piala"
+                    <img src="prestasi-juara.jpg" alt="Santri Alkarim Rasyid Juara Lomba dan Memegang Piala"
                         class="w-full h-auto max-h-[380px] object-contain object-top" loading="lazy" decoding="async"
                         width="750" height="1000">
                     <p class="p-3 text-center text-xs font-semibold text-gold-300 bg-burgundy-950">
@@ -1434,7 +1444,7 @@
                     </p>
                 </div>
                 <div class="rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-soft bg-burgundy-950">
-                    <img src="assets/prestasi-medali.jpg" alt="Koleksi Medali dan Piagam Prestasi Santri Alkarim Rasyid"
+                    <img src="prestasi-medali.jpg" alt="Koleksi Medali dan Piagam Prestasi Santri Alkarim Rasyid"
                         class="w-full h-auto max-h-[380px] object-contain object-top" loading="lazy" decoding="async"
                         width="750" height="1000">
                     <p class="p-3 text-center text-xs font-semibold text-gold-300 bg-burgundy-950">
@@ -1730,7 +1740,7 @@
 
             <!-- Panorama Kampus (Anti-Crop) -->
             <div class="reveal mt-10 rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-soft">
-                <img src="assets/panorama-pesantren.jpg"
+                <img src="panorama-pesantren.jpg"
                     alt="Panorama Lanskap Gedung dan Lapangan Pondok Pesantren Alkarim Rasyid"
                     class="w-full h-auto max-h-[360px] object-cover" loading="lazy" decoding="async" width="1600"
                     height="737">
@@ -1762,7 +1772,7 @@
                 <div
                     class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/masjid-alkarim.jpg" alt="Masjid Alkarim Rasyid"
+                        <img src="masjid-alkarim.jpg" alt="Masjid Alkarim Rasyid"
                             class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1783,7 +1793,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.08s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/ruang-kelas.jpg" alt="Ruang Kelas SMP Alkarim Rasyid"
+                        <img src="ruang-kelas.jpg" alt="Ruang Kelas SMP Alkarim Rasyid"
                             class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1805,7 +1815,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.16s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/lab-komputer.jpg" alt="Laboratorium Komputer SMP Alkarim Rasyid"
+                        <img src="lab-komputer.jpg" alt="Laboratorium Komputer SMP Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1826,7 +1836,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.24s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/saung-mengaji.jpg" alt="Saung Mengaji dan Pendopo Santri Alkarim Rasyid"
+                        <img src="saung-mengaji.jpg" alt="Saung Mengaji dan Pendopo Santri Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1848,7 +1858,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300 sm:col-span-2 lg:col-span-2"
                     style="transition-delay:.32s">
                     <div class="aspect-[16/7] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/gerbang-gedung-utama.jpg" alt="Pintu Gerbang & Keamanan Pesantren"
+                        <img src="gerbang-gedung-utama.jpg" alt="Pintu Gerbang & Keamanan Pesantren"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1891,8 +1901,7 @@
                 <div
                     class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/fasilitas-asrama.jpg"
-                            alt="Gedung Asrama Santri Pondok Pesantren Alkarim Rasyid"
+                        <img src="fasilitas-asrama.jpg" alt="Gedung Asrama Santri Pondok Pesantren Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1913,7 +1922,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.08s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/fasilitas-kamar.jpg" alt="Kamar Santri Pondok Pesantren Alkarim Rasyid"
+                        <img src="fasilitas-kamar.jpg" alt="Kamar Santri Pondok Pesantren Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1935,7 +1944,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.16s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/fasilitas-dapur.jpg" alt="Dapur Pesantren Pondok Pesantren Alkarim Rasyid"
+                        <img src="fasilitas-dapur.jpg" alt="Dapur Pesantren Pondok Pesantren Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
                     </div>
@@ -1957,7 +1966,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300"
                     style="transition-delay:.24s">
                     <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/fasilitas-km-in.jpg"
+                        <img src="fasilitas-km-in.jpg"
                             alt="Kamar Mandi Santri Dalam (IN) Pondok Pesantren Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
@@ -1980,7 +1989,7 @@
                 <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card hover:shadow-soft hover:-translate-y-1 transition duration-300 sm:col-span-2 lg:col-span-2"
                     style="transition-delay:.32s">
                     <div class="aspect-[16/7] bg-burgundy-950 overflow-hidden">
-                        <img src="assets/fasilitas-km-out.jpg"
+                        <img src="fasilitas-km-out.jpg"
                             alt="Kamar Mandi Santri Luar (OUT) Pondok Pesantren Alkarim Rasyid"
                             class="w-full h-full object-cover object-center hover:scale-105 transition duration-500"
                             loading="lazy" decoding="async" width="1200" height="900">
@@ -2469,13 +2478,13 @@
                         class="reveal group relative bg-burgundy-900/90 rounded-3xl p-3 border-2 border-gold-500/50 shadow-soft">
                         <div
                             class="relative rounded-2xl overflow-hidden bg-burgundy-950 flex items-center justify-center">
-                            <img src="assets/brosur-pmb-2.jpg"
+                            <img src="brosur-pmb-2.jpg"
                                 alt="Brosur Resmi Halaman 2 - Prestasi, Visi Misi & Informasi PMB Pondok Pesantren Alkarim Rasyid Indonesia"
                                 class="w-full h-auto max-h-[560px] object-contain rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
                                 width="750" height="1060" loading="lazy" decoding="async">
 
                             <button type="button"
-                                onclick="openBrosurModal('assets/brosur-pmb-2.jpg', 'Brosur PMB 2027/2028 Halaman Belakang (Visi, Ekskul, Prestasi & Syarat)')"
+                                onclick="openBrosurModal('brosur-pmb-2.jpg', 'Brosur PMB 2027/2028 Halaman Belakang (Visi, Ekskul, Prestasi & Syarat)')"
                                 class="absolute bottom-3 right-3 bg-burgundy-950/90 hover:bg-gold-500 hover:text-burgundy-950 text-gold-300 border border-gold-500/50 text-xs font-bold px-3 py-1.5 rounded-lg shadow-gold flex items-center gap-1.5 transition">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
