@@ -226,6 +226,31 @@
                 opacity: 1;
             }
         }
+
+        /* Equalizer Bars Animation */
+        @keyframes eqPulse {
+
+            0%,
+            100% {
+                height: 4px;
+            }
+
+            50% {
+                height: 14px;
+            }
+        }
+
+        .eq-playing span:nth-child(1) {
+            animation: eqPulse 0.7s ease-in-out infinite;
+        }
+
+        .eq-playing span:nth-child(2) {
+            animation: eqPulse 1.0s ease-in-out infinite 0.15s;
+        }
+
+        .eq-playing span:nth-child(3) {
+            animation: eqPulse 0.85s ease-in-out infinite 0.3s;
+        }
     </style>
 </head>
 
@@ -404,11 +429,22 @@
                 <a href="#informasi" class="hover:text-gold-300 transition">Kontak &amp; Brosur</a>
             </div>
 
-            <a href="https://wa.me/6282280003961?text=Halo%2C%20saya%20ingin%20mendapatkan%20informasi%20Penerimaan%20Murid%20Baru%20Pondok%20Pesantren%20Alkarim%20Rasyid%20Indonesia%20Tahun%20Ajaran%202027%2F2028."
-                target="_blank" rel="noopener"
-                class="btn-shine shrink-0 text-xs md:text-sm bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-burgundy-950 px-5 py-2.5 rounded-full font-display font-extrabold shadow-gold transition-all duration-200">
-                Daftar PMB →
-            </a>
+            <div class="flex items-center gap-2.5">
+                <!-- Tombol Audio Musik Latar Header -->
+                <button type="button" onclick="toggleAudio()" id="audioHeaderBtn" aria-label="Putar Mars Alkarim Rasyid"
+                    class="flex items-center gap-2 bg-burgundy-950/90 hover:bg-burgundy-950 border border-gold-500/50 text-gold-300 px-3 py-1.5 rounded-full text-xs font-semibold shadow transition">
+                    <span id="audioHeaderIcon" class="text-sm">🎵</span>
+                    <span id="audioHeaderText" class="hidden sm:inline text-[11px]">Mars Alkarim</span>
+                    <span id="audioStatusBadge"
+                        class="text-[9px] bg-burgundy-900 text-gold-400 font-bold px-1.5 py-0.5 rounded border border-gold-500/30">Mulai</span>
+                </button>
+
+                <a href="https://wa.me/6282280003961?text=Halo%2C%20saya%20ingin%20mendapatkan%20informasi%20Penerimaan%20Murid%20Baru%20Pondok%20Pesantren%20Alkarim%20Rasyid%20Indonesia%20Tahun%20Ajaran%202027%2F2028."
+                    target="_blank" rel="noopener"
+                    class="btn-shine shrink-0 text-xs md:text-sm bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-burgundy-950 px-5 py-2.5 rounded-full font-display font-extrabold shadow-gold transition-all duration-200">
+                    Daftar PMB →
+                </a>
+            </div>
         </div>
     </header>
 
@@ -875,81 +911,150 @@
             </div>
 
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Pilar 1: Tahfidz & Al-Qur'an -->
+                <!-- Pilar 1: Tahfidz & Al-Qur'an (Logo Simbol) -->
                 <div
-                    class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300">
-                    <div class="h-48 overflow-hidden bg-burgundy-950">
-                        <img src="santri-tahfidz-quran.jpg"
-                            alt="Halaqah Tahfidz dan Tilawah Al-Qur'an Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                    class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
+                    <!-- Area Logo Simbol -->
+                    <div
+                        class="py-10 flex items-center justify-center bg-gradient-to-b from-burgundy-950 via-burgundy-900 to-burgundy-900/80 border-b border-gold-500/20 relative">
+                        <div
+                            class="relative w-24 h-24 rounded-full bg-gradient-to-br from-burgundy-800 via-burgundy-900 to-burgundy-950 border-2 border-gold-400 p-1.5 shadow-gold flex items-center justify-center group-hover:scale-105 transition duration-300">
+                            <div
+                                class="w-full h-full rounded-full bg-burgundy-950/90 border border-gold-500/40 flex items-center justify-center text-gold-300">
+                                <!-- Simbol Mushaf Al-Qur'an -->
+                                <svg class="w-12 h-12 text-gold-400" viewBox="0 0 48 48" fill="none"
+                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M14 38L34 38M18 38L12 43M30 38L36 43" stroke-width="2" />
+                                    <path d="M16 34L24 28L32 34" stroke-width="2" />
+                                    <path
+                                        d="M24 14C20 11 11 11 6 13V31C11 29 20 29 24 33C28 29 37 29 42 31V13C37 11 28 11 24 14Z"
+                                        fill="rgba(201,164,92,0.15)" stroke="currentColor" />
+                                    <line x1="24" y1="14" x2="24" y2="33" />
+                                    <line x1="11" y1="19" x2="19" y2="18" stroke-width="1.8" />
+                                    <line x1="11" y1="24" x2="19" y2="23" stroke-width="1.8" />
+                                    <line x1="29" y1="18" x2="37" y2="19" stroke-width="1.8" />
+                                    <line x1="29" y1="23" x2="37" y2="24" stroke-width="1.8" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <span
-                            class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
-                            Pilar Utama
-                        </span>
-                        <h3 class="font-display font-bold text-ivory-50 text-lg mt-3">Tahfidz &amp; Al-Qur'an</h3>
-                        <p class="text-xs md:text-sm text-ivory-200/80 mt-2 leading-relaxed">
-                            Pembinaan hafalan bertahap, tahsin tilawah dengan kaidah tajwid yang benar, pemahaman makna
-                            ayat, serta muraja'ah harian terjadwal.
-                        </p>
+                    <div class="p-6 md:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
+                                Pilar Utama
+                            </span>
+                            <h3 class="font-display font-bold text-ivory-50 text-xl mt-3">Tahfidz &amp; Al-Qur'an</h3>
+                            <p class="text-xs md:text-sm text-ivory-200/80 mt-2.5 leading-relaxed">
+                                Pembinaan hafalan bertahap, tahsin tilawah dengan kaidah tajwid yang benar, pemahaman
+                                makna
+                                ayat, serta muraja'ah harian terjadwal untuk mencetak para penghafal Al-Qur'an mutqin.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-gold-500/20 text-[11px] text-gold-300/90 font-medium">
+                            ✓ Halaqah Intensif • Bimbingan Bersanad • Muraja'ah Harian
+                        </div>
                     </div>
                 </div>
 
-                <!-- Pilar 2: Pendidikan Formal SMP (Terakreditasi B) -->
-                <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300"
+                <!-- Pilar 2: Pendidikan Formal SMP (Logo Simbol - Terakreditasi B) -->
+                <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 hover:-translate-y-1 transition duration-300 flex flex-col justify-between relative"
                     style="transition-delay:.1s">
-                    <div class="h-48 overflow-hidden bg-burgundy-950 relative">
-                        <img src="santri-formal-smp.jpg"
-                            alt="Pembelajaran Formal SMP Kurikulum Nasional Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                    <!-- Area Logo Simbol -->
+                    <div
+                        class="py-10 flex items-center justify-center bg-gradient-to-b from-burgundy-950 via-burgundy-900 to-burgundy-900/80 border-b border-gold-500/20 relative">
                         <div
                             class="absolute top-3 right-3 bg-gradient-to-r from-gold-500 to-gold-400 text-burgundy-950 font-black text-xs px-3 py-1 rounded-full shadow-gold border border-gold-300">
                             ★ TERAKREDITASI B
                         </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center gap-2 flex-wrap">
-                            <span
-                                class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
-                                Pilar Akademik Formal
-                            </span>
-                            <span
-                                class="text-[10px] font-black text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/40">
-                                BAN-S/M
-                            </span>
+                        <div
+                            class="relative w-24 h-24 rounded-full bg-gradient-to-br from-burgundy-800 via-burgundy-900 to-burgundy-950 border-2 border-gold-400 p-1.5 shadow-gold flex items-center justify-center group-hover:scale-105 transition duration-300">
+                            <div
+                                class="w-full h-full rounded-full bg-burgundy-950/90 border border-gold-500/40 flex items-center justify-center text-gold-300">
+                                <!-- Simbol Topi Toga Akademik -->
+                                <svg class="w-12 h-12 text-gold-400" viewBox="0 0 48 48" fill="none"
+                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polygon points="24 9 44 18 24 27 4 18" fill="rgba(201,164,92,0.15)"
+                                        stroke="currentColor" />
+                                    <path d="M10 21V31.5C10 31.5 15 36 24 36C33 36 38 31.5 38 31.5V21"
+                                        fill="rgba(201,164,92,0.1)" stroke="currentColor" />
+                                    <path d="M40 20V32C40 33.5 39 35 37 35" stroke-width="2" />
+                                    <circle cx="37" cy="36" r="2" fill="currentColor" />
+                                </svg>
+                            </div>
                         </div>
-                        <h3 class="font-display font-bold text-ivory-50 text-lg mt-3">Pendidikan Formal SMP (Akreditasi
-                            B)</h3>
-                        <p class="text-xs md:text-sm text-ivory-200/80 mt-2 leading-relaxed">
-                            Kurikulum nasional terintegrasi <b>Terakreditasi B oleh Badan Akreditasi Nasional
-                                Sekolah/Madrasah (BAN-S/M)</b>. Lulusan memegang ijazah negara resmi dan dapat dengan
-                            mudah melanjutkan ke SMA/SMK/MA Negeri atau Swasta unggulan.
-                        </p>
+                    </div>
+                    <div class="p-6 md:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <span
+                                    class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
+                                    Pilar Akademik Formal
+                                </span>
+                                <span
+                                    class="text-[10px] font-black text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-500/40">
+                                    BAN-S/M
+                                </span>
+                            </div>
+                            <h3 class="font-display font-bold text-ivory-50 text-xl mt-3">Pendidikan Formal SMP</h3>
+                            <p class="text-xs md:text-sm text-ivory-200/80 mt-2.5 leading-relaxed">
+                                Kurikulum nasional terintegrasi <b>Terakreditasi B oleh Badan Akreditasi Nasional
+                                    Sekolah/Madrasah (BAN-S/M)</b>. Lulusan memegang ijazah negara resmi dan dapat
+                                dengan
+                                mudah melanjutkan ke SMA/SMK/MA Negeri atau Swasta unggulan.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-gold-500/20 text-[11px] text-gold-300/90 font-medium">
+                            ✓ Kurikulum Nasional • Ijazah Resmi Negara • Lab Komputer IT
+                        </div>
                     </div>
                 </div>
 
-                <!-- Pilar 3: Dakwah & Karakter -->
-                <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 transition duration-300"
+                <!-- Pilar 3: Dakwah & Karakter (Logo Simbol) -->
+                <div class="reveal bg-burgundy-900/90 rounded-3xl border border-gold-500/40 overflow-hidden shadow-soft hover:border-gold-300 hover:-translate-y-1 transition duration-300 flex flex-col justify-between"
                     style="transition-delay:.2s">
-                    <div class="h-48 overflow-hidden bg-burgundy-950">
-                        <img src="santri-batik-karakter.jpg"
-                            alt="Pembinaan Karakter Santri Mandiri dan Berakhlak Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                    <!-- Area Logo Simbol -->
+                    <div
+                        class="py-10 flex items-center justify-center bg-gradient-to-b from-burgundy-950 via-burgundy-900 to-burgundy-900/80 border-b border-gold-500/20 relative">
+                        <div
+                            class="relative w-24 h-24 rounded-full bg-gradient-to-br from-burgundy-800 via-burgundy-900 to-burgundy-950 border-2 border-gold-400 p-1.5 shadow-gold flex items-center justify-center group-hover:scale-105 transition duration-300">
+                            <div
+                                class="w-full h-full rounded-full bg-burgundy-950/90 border border-gold-500/40 flex items-center justify-center text-gold-300">
+                                <!-- Simbol Kubah Masjid & Menara Dakwah -->
+                                <svg class="w-12 h-12 text-gold-400" viewBox="0 0 48 48" fill="none"
+                                    stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M24 8C24 8 20 13 14 17C14 26 34 26 34 17C28 13 24 8 24 8Z"
+                                        fill="rgba(201,164,92,0.15)" stroke="currentColor" />
+                                    <circle cx="24" cy="5.5" r="1.5" fill="currentColor" />
+                                    <rect x="13" y="26" width="22" height="15" rx="1.5" fill="rgba(201,164,92,0.08)"
+                                        stroke="currentColor" />
+                                    <path d="M21 41V33C21 31.3 22.3 30 24 30C25.7 30 27 31.3 27 33V41"
+                                        stroke-width="2" />
+                                    <path d="M8 22V41M40 22V41" stroke-width="2" />
+                                    <path d="M6 22H10M38 22H42" stroke-width="2" />
+                                    <path d="M8 17L6 22H10L8 17ZM40 17L38 22H42L40 17Z" fill="currentColor" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <span
-                            class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
-                            Pilar Karakter
-                        </span>
-                        <h3 class="font-display font-bold text-ivory-50 text-lg mt-3">Dakwah &amp; Kemandirian</h3>
-                        <p class="text-xs md:text-sm text-ivory-200/80 mt-2 leading-relaxed">
-                            Penguatan bahasa Arab dan Inggris untuk wawasan global, latihan khitobah dakwah, serta
-                            pembiasaan disiplin dan adab mandiri.
-                        </p>
+                    <div class="p-6 md:p-7 flex-1 flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="text-[10px] font-extrabold tracking-wider text-gold-300 bg-burgundy-950 px-2.5 py-1 rounded-md uppercase border border-gold-500/30">
+                                Pilar Karakter
+                            </span>
+                            <h3 class="font-display font-bold text-ivory-50 text-xl mt-3">Dakwah &amp; Kemandirian</h3>
+                            <p class="text-xs md:text-sm text-ivory-200/80 mt-2.5 leading-relaxed">
+                                Penguatan bahasa Arab dan Inggris untuk wawasan global, pelatihan khitobah da'i, serta
+                                pembiasaan disiplin asrama dan adab islami mandiri yang berwawasan luas.
+                            </p>
+                        </div>
+                        <div class="mt-5 pt-4 border-t border-gold-500/20 text-[11px] text-gold-300/90 font-medium">
+                            ✓ Bilingual Wawasan Global • Latihan Khitobah • Adab Mandiri
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1277,15 +1382,16 @@
                 </p>
             </div>
 
-            <!-- Grid 6 Foto Ekskul Asli (Anti-Crop, Proporsional) -->
+            <!-- Grid 6 Foto Ekskul Asli (Crop Rapi, Padat & Senada Tanpa Space Kosong) -->
             <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1. Tapak Suci -->
                 <div
-                    class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
+                    class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
                         <img src="ekskul-tapak-suci.jpg" alt="Ekstrakurikuler Tapak Suci Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -1301,12 +1407,13 @@
                 </div>
 
                 <!-- 2. Pramuka -->
-                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
+                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
                     style="transition-delay:.08s">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
                         <img src="ekskul-pramuka.jpg" alt="Ekstrakurikuler Pramuka Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -1322,12 +1429,13 @@
                 </div>
 
                 <!-- 3. Da'i -->
-                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
+                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
                     style="transition-delay:.16s">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
-                        <img src="prestasi-juara.jpg" alt="Ekstrakurikuler Da'i dan Dakwah Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
+                        <img src="ekskul-dai.jpg" alt="Ekstrakurikuler Da'i dan Dakwah Santri Alkarim Rasyid"
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -1344,12 +1452,13 @@
                 </div>
 
                 <!-- 4. Tilawah / Qori -->
-                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
+                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
                     style="transition-delay:.24s">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
                         <img src="ekskul-tilawah.jpg" alt="Ekstrakurikuler Tilawah dan Qori Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -1365,12 +1474,13 @@
                 </div>
 
                 <!-- 5. Hadroh -->
-                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
+                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
                     style="transition-delay:.32s">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
                         <img src="ekskul-hadroh.jpg" alt="Ekstrakurikuler Seni Rebana Hadroh Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -1386,13 +1496,14 @@
                 </div>
 
                 <!-- 6. Olahraga -->
-                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft transition-all duration-300"
+                <div class="reveal bg-white rounded-3xl border border-gold-500/30 overflow-hidden shadow-card group hover:shadow-soft hover:-translate-y-1 transition-all duration-300"
                     style="transition-delay:.4s">
-                    <div class="aspect-[4/3] bg-burgundy-950 overflow-hidden flex items-center justify-center">
+                    <div
+                        class="aspect-[4/3] bg-ivory-50 overflow-hidden flex items-center justify-center border-b border-gold-500/20">
                         <img src="ekskul-olahraga.jpg"
                             alt="Ekstrakurikuler Olahraga Futsal, Voli dan Bulutangkis Santri Alkarim Rasyid"
-                            class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"
-                            loading="lazy" decoding="async" width="750" height="1000">
+                            class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                            loading="lazy" decoding="async" width="1200" height="900">
                     </div>
                     <div class="p-5">
                         <span
@@ -2678,10 +2789,33 @@
     </footer>
 
     <!-- ══════════════════════════════════════════════════════════
-     REAL-TIME ORDER / REGISTRATION NOTIFICATION (Pojok Kiri Bawah)
+     BACKGROUND AUDIO PLAYER (Mars Alkarim Rasyid Indonesia)
+     ══════════════════════════════════════════════════════════ -->
+    <audio id="bgAudio" src="mars-alkarim-rasyid.mp3" preload="auto" loop></audio>
+
+    <!-- Floating Audio Control Pill (Mobile & Desktop) -->
+    <div id="floatingAudioPill" onclick="toggleAudio()" role="button" aria-label="Kontrol Mars Alkarim"
+        class="fixed bottom-40 sm:bottom-24 left-4 z-40 bg-burgundy-950/95 backdrop-blur-md border border-gold-500/60 rounded-full pl-3 pr-3.5 py-1.5 shadow-soft flex items-center gap-2.5 cursor-pointer hover:border-gold-300 transition duration-300 group select-none">
+        <div class="flex items-end gap-0.5 h-3.5" id="eqBars">
+            <span class="w-1 h-2 bg-gold-400 rounded-full transition-all duration-300"></span>
+            <span class="w-1 h-3.5 bg-gold-400 rounded-full transition-all duration-300"></span>
+            <span class="w-1 h-2.5 bg-gold-400 rounded-full transition-all duration-300"></span>
+        </div>
+        <div class="flex flex-col text-left">
+            <span class="text-[10px] font-bold text-ivory-100 flex items-center gap-1.5 leading-tight">
+                <span>🎵 Mars Alkarim</span>
+                <span id="floatAudioState"
+                    class="text-[9px] text-emerald-400 font-bold bg-emerald-950/80 px-1 py-0.2 rounded border border-emerald-500/30">Putar</span>
+            </span>
+            <span class="text-[8px] text-gold-300/80 leading-tight">Klik untuk jeda/putar lagu mars</span>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════════
+     REAL-TIME ORDER / REGISTRATION NOTIFICATION (Pojok Kiri Bawah - Naik di Mobile)
      ══════════════════════════════════════════════════════════ -->
     <div id="orderNotification"
-        class="fixed bottom-4 left-4 z-50 transform -translate-x-[125%] opacity-0 transition-all duration-500 max-w-[320px] sm:max-w-xs bg-burgundy-950/95 backdrop-blur-md border border-gold-500/50 rounded-2xl p-3 shadow-soft flex items-center gap-3">
+        class="fixed bottom-20 sm:bottom-6 left-4 z-50 transform -translate-x-[125%] opacity-0 transition-all duration-500 max-w-[320px] sm:max-w-xs bg-burgundy-950/95 backdrop-blur-md border border-gold-500/50 rounded-2xl p-3 shadow-soft flex items-center gap-3">
         <div
             class="w-10 h-10 rounded-full bg-gradient-to-tr from-gold-500 to-gold-300 text-burgundy-950 font-black flex items-center justify-center shrink-0 shadow-gold text-base">
             <span id="notifIcon">✨</span>
@@ -3000,6 +3134,101 @@
             updateTimer();
             setInterval(updateTimer, 1000);
         })();
+
+        // ══════════════════════════════════════════════════════════
+        // 7. BACKGROUND AUDIO CONTROLLER (Mars Alkarim Rasyid Indonesia)
+        // ══════════════════════════════════════════════════════════
+        var bgAudio = document.getElementById('bgAudio');
+        var isAudioPlaying = false;
+        var hasUserInteracted = false;
+
+        function updateAudioUI(playing) {
+            isAudioPlaying = playing;
+            var eq = document.getElementById("eqBars");
+            var floatState = document.getElementById("floatAudioState");
+            var headerBadge = document.getElementById("audioStatusBadge");
+
+            if (playing) {
+                if (eq) eq.classList.add("eq-playing");
+                if (floatState) {
+                    floatState.textContent = "Putar";
+                    floatState.className = "text-[9px] text-emerald-400 font-bold bg-emerald-950/80 px-1 py-0.2 rounded border border-emerald-500/30";
+                }
+                if (headerBadge) {
+                    headerBadge.textContent = "Putar";
+                    headerBadge.className = "text-[9px] bg-emerald-950 text-emerald-400 font-bold px-1.5 py-0.5 rounded border border-emerald-500/40";
+                }
+            } else {
+                if (eq) eq.classList.remove("eq-playing");
+                if (floatState) {
+                    floatState.textContent = "Jeda";
+                    floatState.className = "text-[9px] text-neutral-400 font-bold bg-burgundy-900 px-1 py-0.2 rounded border border-gold-500/30";
+                }
+                if (headerBadge) {
+                    headerBadge.textContent = "Jeda";
+                    headerBadge.className = "text-[9px] bg-burgundy-900 text-neutral-400 font-bold px-1.5 py-0.5 rounded border border-gold-500/30";
+                }
+            }
+        }
+
+        function playBgAudio() {
+            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
+            if (!bgAudio) return;
+            bgAudio.volume = 0.75;
+            var playPromise = bgAudio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(function () {
+                    updateAudioUI(true);
+                }).catch(function (error) {
+                    // Browser memblokir autoplay tanpa gesture interaksi pengguna
+                    updateAudioUI(false);
+                });
+            }
+        }
+
+        function pauseBgAudio() {
+            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
+            if (bgAudio) {
+                bgAudio.pause();
+                updateAudioUI(false);
+            }
+        }
+
+        function toggleAudio() {
+            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
+            if (!bgAudio) return;
+            if (bgAudio.paused) {
+                playBgAudio();
+            } else {
+                pauseBgAudio();
+            }
+        }
+
+        if (bgAudio) {
+            bgAudio.addEventListener('play', function () { updateAudioUI(true); });
+            bgAudio.addEventListener('pause', function () { updateAudioUI(false); });
+            bgAudio.addEventListener('ended', function () { updateAudioUI(false); });
+        }
+
+        // Coba putar otomatis seawal mungkin
+        playBgAudio();
+        window.addEventListener('DOMContentLoaded', playBgAudio);
+        window.addEventListener('load', playBgAudio);
+
+        // Fallback pemicu otomatis pada interaksi gesture pertama (scroll, sentuh, klik, gerak kursor, dll.)
+        var interactionEvents = ['click', 'touchstart', 'scroll', 'mousemove', 'keydown', 'wheel', 'pointerdown'];
+        function triggerAutoOnGesture() {
+            if (hasUserInteracted) return;
+            hasUserInteracted = true;
+            playBgAudio();
+            interactionEvents.forEach(function (evt) {
+                window.removeEventListener(evt, triggerAutoOnGesture);
+            });
+        }
+
+        interactionEvents.forEach(function (evt) {
+            window.addEventListener(evt, triggerAutoOnGesture, { passive: true, once: true });
+        });
     </script>
 </body>
 
