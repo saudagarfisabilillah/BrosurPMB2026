@@ -12,8 +12,7 @@
         content="Membentuk Generasi Qur'ani, Berilmu, Berakhlak & Berdakwah. Pendidikan Formal SMP terpadu dengan Tahfidz Al-Qur'an dan Dakwah di Pesawaran, Lampung.">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#5A0F1B">
-    <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235A0F1B'/%3E%3Cpath d='M32 14c7 5.5 11 11.5 11 18H21c0-6.5 4-12.5 11-18z' fill='%23C9A45C'/%3E%3Crect x='16' y='34' width='32' height='14' rx='3' fill='%23C9A45C'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/png" href="logo-alkarim.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -398,17 +397,15 @@
     <header id="siteHeader"
         class="sticky top-0 z-40 bg-burgundy-900/95 backdrop-blur-md border-b border-gold-500/30 transition-all duration-300 shadow-sm">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
-            <a href="#hero" class="flex items-center gap-3 min-w-0">
+            <a href="#hero" class="flex items-center gap-3 min-w-0 group">
                 <span
-                    class="w-10 h-10 rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-600 flex items-center justify-center shadow-gold shrink-0">
-                    <svg class="w-6 h-6 text-burgundy-950" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2.6c3.1 2.6 5.2 5.6 5.2 8.9H6.8c0-3.3 2.1-6.3 5.2-8.9z" />
-                        <rect x="4.5" y="12.8" width="15" height="7.4" rx="1.6" />
-                        <rect x="11.1" y="0.8" width="1.8" height="2.6" rx="0.9" />
-                    </svg>
+                    class="w-11 h-11 rounded-full bg-white p-0.5 shadow-gold border-2 border-gold-400 flex items-center justify-center shrink-0 overflow-hidden group-hover:scale-105 transition duration-300">
+                    <img src="logo-alkarim.png" alt="Logo Pondok Pesantren Qur'an & Dakwah Alkarim Rasyid"
+                        class="w-full h-full object-contain" width="44" height="44">
                 </span>
                 <span class="leading-tight min-w-0">
-                    <span class="block font-display font-black text-ivory-50 text-[14px] md:text-base tracking-wide">
+                    <span
+                        class="block font-display font-black text-ivory-50 text-[14px] md:text-base tracking-wide group-hover:text-gold-300 transition">
                         ALKARIM RASYID
                     </span>
                     <span class="block text-[11px] text-gold-300/90 truncate font-medium">
@@ -430,15 +427,6 @@
             </div>
 
             <div class="flex items-center gap-2.5">
-                <!-- Tombol Audio Musik Latar Header -->
-                <button type="button" onclick="toggleAudio()" id="audioHeaderBtn" aria-label="Putar Mars Alkarim Rasyid"
-                    class="flex items-center gap-2 bg-burgundy-950/90 hover:bg-burgundy-950 border border-gold-500/50 text-gold-300 px-3 py-1.5 rounded-full text-xs font-semibold shadow transition">
-                    <span id="audioHeaderIcon" class="text-sm">🎵</span>
-                    <span id="audioHeaderText" class="hidden sm:inline text-[11px]">Mars Alkarim</span>
-                    <span id="audioStatusBadge"
-                        class="text-[9px] bg-burgundy-900 text-gold-400 font-bold px-1.5 py-0.5 rounded border border-gold-500/30">Mulai</span>
-                </button>
-
                 <a href="https://wa.me/6282280003961?text=Halo%2C%20saya%20ingin%20mendapatkan%20informasi%20Penerimaan%20Murid%20Baru%20Pondok%20Pesantren%20Alkarim%20Rasyid%20Indonesia%20Tahun%20Ajaran%202027%2F2028."
                     target="_blank" rel="noopener"
                     class="btn-shine shrink-0 text-xs md:text-sm bg-gradient-to-r from-gold-500 to-gold-400 hover:from-gold-400 hover:to-gold-300 text-burgundy-950 px-5 py-2.5 rounded-full font-display font-extrabold shadow-gold transition-all duration-200">
@@ -459,6 +447,15 @@
         <div class="relative z-10 max-w-6xl mx-auto px-4">
             <!-- Header Identitas Yayasan & Pondok -->
             <div class="hero-in text-center max-w-3xl mx-auto" style="animation-delay:.05s">
+                <!-- Logo Resmi Pondok Pesantren Alkarim Rasyid -->
+                <div class="inline-flex items-center justify-center mb-4">
+                    <div
+                        class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white p-2 shadow-gold border-2 border-gold-400 flex items-center justify-center hover:scale-105 transition duration-300">
+                        <img src="logo-alkarim.png" alt="Logo Pondok Pesantren Qur'an & Dakwah Alkarim Rasyid"
+                            class="w-full h-full object-contain" width="96" height="96">
+                    </div>
+                </div>
+
                 <div
                     class="inline-flex items-center flex-wrap justify-center gap-2 bg-burgundy-900/90 border border-gold-500/50 rounded-full px-4 py-1.5 shadow-gold mb-3">
                     <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
@@ -708,6 +705,15 @@
         class="relative py-16 md:py-24 px-4 bg-gradient-to-b from-ivory-50 to-ivory-100 pattern-islamic">
         <div class="max-w-5xl mx-auto">
             <div class="reveal text-center">
+                <!-- Logo Resmi Lembaga -->
+                <div class="inline-flex items-center justify-center mb-3">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white p-1.5 shadow-soft border-2 border-gold-500/50 flex items-center justify-center hover:scale-105 transition duration-300">
+                        <img src="logo-alkarim.png" alt="Logo Resmi Pondok Pesantren Alkarim Rasyid"
+                            class="w-full h-full object-contain" width="64" height="64">
+                    </div>
+                </div>
+
                 <span
                     class="inline-block text-xs font-bold uppercase tracking-[0.22em] text-burgundy-700 bg-burgundy-50 border border-burgundy-200 rounded-full px-4 py-1.5">
                     Mengenal Lembaga
@@ -2765,10 +2771,11 @@
     <!-- ═══ FOOTER ═══ -->
     <footer class="bg-burgundy-950 border-t border-gold-500/30 text-ivory-100 py-10 px-4 text-center">
         <div class="max-w-4xl mx-auto">
-            <div class="flex items-center justify-center gap-2.5 mb-3">
+            <div class="flex items-center justify-center gap-3 mb-3">
                 <span
-                    class="w-8 h-8 rounded-full bg-gold-500 flex items-center justify-center text-burgundy-950 font-black">
-                    ★
+                    class="w-10 h-10 rounded-full bg-white p-0.5 shadow-gold border-2 border-gold-400 flex items-center justify-center shrink-0 overflow-hidden">
+                    <img src="logo-alkarim.png" alt="Logo Pondok Pesantren Alkarim Rasyid"
+                        class="w-full h-full object-contain" width="40" height="40">
                 </span>
                 <span class="font-display font-extrabold text-ivory-50 text-base tracking-wide">
                     ALKARIM RASYID INDONESIA
@@ -2789,27 +2796,9 @@
     </footer>
 
     <!-- ══════════════════════════════════════════════════════════
-     BACKGROUND AUDIO PLAYER (Mars Alkarim Rasyid Indonesia)
+     BACKGROUND AUDIO (Mars Alkarim Rasyid Indonesia - Otomatis Hidup Tanpa Button)
      ══════════════════════════════════════════════════════════ -->
-    <audio id="bgAudio" src="mars-alkarim-rasyid.mp3" preload="auto" loop></audio>
-
-    <!-- Floating Audio Control Pill (Mobile & Desktop) -->
-    <div id="floatingAudioPill" onclick="toggleAudio()" role="button" aria-label="Kontrol Mars Alkarim"
-        class="fixed bottom-40 sm:bottom-24 left-4 z-40 bg-burgundy-950/95 backdrop-blur-md border border-gold-500/60 rounded-full pl-3 pr-3.5 py-1.5 shadow-soft flex items-center gap-2.5 cursor-pointer hover:border-gold-300 transition duration-300 group select-none">
-        <div class="flex items-end gap-0.5 h-3.5" id="eqBars">
-            <span class="w-1 h-2 bg-gold-400 rounded-full transition-all duration-300"></span>
-            <span class="w-1 h-3.5 bg-gold-400 rounded-full transition-all duration-300"></span>
-            <span class="w-1 h-2.5 bg-gold-400 rounded-full transition-all duration-300"></span>
-        </div>
-        <div class="flex flex-col text-left">
-            <span class="text-[10px] font-bold text-ivory-100 flex items-center gap-1.5 leading-tight">
-                <span>🎵 Mars Alkarim</span>
-                <span id="floatAudioState"
-                    class="text-[9px] text-emerald-400 font-bold bg-emerald-950/80 px-1 py-0.2 rounded border border-emerald-500/30">Putar</span>
-            </span>
-            <span class="text-[8px] text-gold-300/80 leading-tight">Klik untuk jeda/putar lagu mars</span>
-        </div>
-    </div>
+    <audio id="bgAudio" src="mars-alkarim-rasyid.mp3" preload="auto" loop autoplay playsinline></audio>
 
     <!-- ══════════════════════════════════════════════════════════
      REAL-TIME ORDER / REGISTRATION NOTIFICATION (Pojok Kiri Bawah - Naik di Mobile)
@@ -3136,99 +3125,52 @@
         })();
 
         // ══════════════════════════════════════════════════════════
-        // 7. BACKGROUND AUDIO CONTROLLER (Mars Alkarim Rasyid Indonesia)
+        // 7. BACKGROUND AUDIO (Mars Alkarim Rasyid - Otomatis Hidup Tanpa Button)
         // ══════════════════════════════════════════════════════════
-        var bgAudio = document.getElementById('bgAudio');
-        var isAudioPlaying = false;
-        var hasUserInteracted = false;
+        (function initAutoAudio() {
+            var bgAudio = document.getElementById('bgAudio');
+            if (!bgAudio) return;
 
-        function updateAudioUI(playing) {
-            isAudioPlaying = playing;
-            var eq = document.getElementById("eqBars");
-            var floatState = document.getElementById("floatAudioState");
-            var headerBadge = document.getElementById("audioStatusBadge");
+            bgAudio.volume = 0.75;
+            var isStarted = false;
 
-            if (playing) {
-                if (eq) eq.classList.add("eq-playing");
-                if (floatState) {
-                    floatState.textContent = "Putar";
-                    floatState.className = "text-[9px] text-emerald-400 font-bold bg-emerald-950/80 px-1 py-0.2 rounded border border-emerald-500/30";
-                }
-                if (headerBadge) {
-                    headerBadge.textContent = "Putar";
-                    headerBadge.className = "text-[9px] bg-emerald-950 text-emerald-400 font-bold px-1.5 py-0.5 rounded border border-emerald-500/40";
-                }
-            } else {
-                if (eq) eq.classList.remove("eq-playing");
-                if (floatState) {
-                    floatState.textContent = "Jeda";
-                    floatState.className = "text-[9px] text-neutral-400 font-bold bg-burgundy-900 px-1 py-0.2 rounded border border-gold-500/30";
-                }
-                if (headerBadge) {
-                    headerBadge.textContent = "Jeda";
-                    headerBadge.className = "text-[9px] bg-burgundy-900 text-neutral-400 font-bold px-1.5 py-0.5 rounded border border-gold-500/30";
+            function startAudio() {
+                if (!bgAudio || isStarted) return;
+                var playPromise = bgAudio.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(function () {
+                        isStarted = true;
+                        cleanupGestureListeners();
+                    }).catch(function (error) {
+                        // Browser memerlukan interaksi/gesture pertama, ditangani oleh gesture listeners
+                    });
                 }
             }
-        }
 
-        function playBgAudio() {
-            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
-            if (!bgAudio) return;
-            bgAudio.volume = 0.75;
-            var playPromise = bgAudio.play();
-            if (playPromise !== undefined) {
-                playPromise.then(function () {
-                    updateAudioUI(true);
-                }).catch(function (error) {
-                    // Browser memblokir autoplay tanpa gesture interaksi pengguna
-                    updateAudioUI(false);
+            var gestureEvents = ['click', 'touchstart', 'scroll', 'mousemove', 'keydown', 'wheel', 'pointerdown'];
+
+            function onUserGesture() {
+                if (isStarted) return;
+                startAudio();
+            }
+
+            function cleanupGestureListeners() {
+                gestureEvents.forEach(function (evt) {
+                    window.removeEventListener(evt, onUserGesture);
+                    document.removeEventListener(evt, onUserGesture);
                 });
             }
-        }
 
-        function pauseBgAudio() {
-            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
-            if (bgAudio) {
-                bgAudio.pause();
-                updateAudioUI(false);
-            }
-        }
-
-        function toggleAudio() {
-            if (!bgAudio) bgAudio = document.getElementById('bgAudio');
-            if (!bgAudio) return;
-            if (bgAudio.paused) {
-                playBgAudio();
-            } else {
-                pauseBgAudio();
-            }
-        }
-
-        if (bgAudio) {
-            bgAudio.addEventListener('play', function () { updateAudioUI(true); });
-            bgAudio.addEventListener('pause', function () { updateAudioUI(false); });
-            bgAudio.addEventListener('ended', function () { updateAudioUI(false); });
-        }
-
-        // Coba putar otomatis seawal mungkin
-        playBgAudio();
-        window.addEventListener('DOMContentLoaded', playBgAudio);
-        window.addEventListener('load', playBgAudio);
-
-        // Fallback pemicu otomatis pada interaksi gesture pertama (scroll, sentuh, klik, gerak kursor, dll.)
-        var interactionEvents = ['click', 'touchstart', 'scroll', 'mousemove', 'keydown', 'wheel', 'pointerdown'];
-        function triggerAutoOnGesture() {
-            if (hasUserInteracted) return;
-            hasUserInteracted = true;
-            playBgAudio();
-            interactionEvents.forEach(function (evt) {
-                window.removeEventListener(evt, triggerAutoOnGesture);
+            gestureEvents.forEach(function (evt) {
+                window.addEventListener(evt, onUserGesture, { passive: true });
+                document.addEventListener(evt, onUserGesture, { passive: true });
             });
-        }
 
-        interactionEvents.forEach(function (evt) {
-            window.addEventListener(evt, triggerAutoOnGesture, { passive: true, once: true });
-        });
+            // Langsung coba putar seketika halaman dibuka
+            startAudio();
+            document.addEventListener('DOMContentLoaded', startAudio);
+            window.addEventListener('load', startAudio);
+        })();
     </script>
 </body>
 
